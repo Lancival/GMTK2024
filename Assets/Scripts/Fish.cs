@@ -121,6 +121,7 @@ public class Fish : MonoBehaviour
 
         if (currentDistance <= wall_buffer)
         {
+            m_RigidBody2D.velocity = new Vector2(0f,0f);
             m_Direction *= -1;
         }
     }
