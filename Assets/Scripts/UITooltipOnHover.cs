@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class UITooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class UITooltipOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
   [Tooltip("Time cursor must hover before tooltip will appear")]
   [Range(0f, 1f)]
   [SerializeField] private float hoverTime = 0.5f;
@@ -27,8 +27,7 @@ public class UITooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
   void Update() {
     if (hovering && !tooltip && Time.time - enterTime > hoverTime) {
       tooltip = Instantiate(tooltipPrefab, transform);
-      tooltip.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-      // TODO: Change tooltip text
+      // TODO: Update tooltip text
     }
   }
 
