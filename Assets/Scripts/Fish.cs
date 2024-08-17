@@ -127,6 +127,8 @@ public class Fish : MonoBehaviour
 
     IEnumerator Swim()
     {
+        TurnCheck();
+        
         float elapsedTime = 0f;
         while (elapsedTime < burst_duration)
         {
