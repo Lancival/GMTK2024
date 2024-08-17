@@ -6,16 +6,13 @@ using UnityEngine.InputSystem.Controls;
 [RequireComponent(typeof(SpriteRenderer))]
 public class DragAndDrop : MonoBehaviour {
   public bool dragging = true;
-  private Mouse mouse;
   private Camera cam;
 
-  void Start() {
-    cam = Camera.main;
-    mouse = Mouse.current;
-  }
+  void Start() => cam = Camera.main;
 
   void Update() {
     if (dragging) {
+      Mouse mouse = Mouse.current;
       transform.position = CalculateDropPosition(mouse.position.ReadValue());
       if (mouse.leftButton.wasReleasedThisFrame) {
         dragging = false;
