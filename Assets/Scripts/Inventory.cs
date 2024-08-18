@@ -3,26 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private Transform m_ContentContainer;
     [SerializeField] private GameObject m_ItemPrefab;
     [SerializeField] private List<Button> m_Tabs;
+    [SerializeField] private StatsDatabase m_Stats;
 
     private List<string> fishes = new();
     private List<string> decos = new();
 
     void Start()
     {
-        for (int i = 0; i < 20; ++i)
+        var stats = m_Stats.stats;
+        var stage1Data = stats.Where(x => x.stage == "1 - Child");
+        var stage1DataFishes = stage1Data.Where(x => x.assetType == "Fish");
+        foreach (var fish in stage1DataFishes)
         {
-            fishes.Add("Fish" + i);
+            fishes.Add(fish.name);
         }
 
-        for (int i = 0; i < 20; ++i)
+        var stage1DataDecos = stage1Data.Where(x => x.assetType == "Decoration");
+        foreach (var deco in stage1DataDecos)
         {
-            decos.Add("Deco" + i);
+            decos.Add(deco.name);
         }
 
         m_Tabs[0].interactable = false;
