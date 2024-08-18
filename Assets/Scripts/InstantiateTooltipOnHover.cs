@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(UIOnHover))]
-public class InstantiateTooltip : MonoBehaviour {
+public class InstantiateTooltipOnHover : MonoBehaviour {
   [SerializeField] private GameObject tooltipPrefab;
   private UIOnHover onHover;
   private GameObject tooltip;
