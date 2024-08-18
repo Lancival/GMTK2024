@@ -10,7 +10,7 @@ public class MusicManager : MonoBehaviour
     [SerializeField]
     private MusicLibrary music_library;
     [SerializeField]
-    private AudioSource music_source;
+    private AudioSource[] music_sources;
 
     void Awake()
     {
@@ -25,13 +25,14 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    public void PlayMusic(string trackName, float fadeDuration=0f)
+    public void PlayMusic(int sourceIndex, string trackName, float fadeDuration=0f)
     {
-        StartCoroutine(AnimateMusicCrossfade(music_library.GetClipFromName(trackName), fadeDuration));
+        StartCoroutine(AnimateMusicCrossfade(sourceIndex, music_library.GetClipFromName(trackName), fadeDuration));
     }
 
-    IEnumerator AnimateMusicCrossfade(AudioClip nextTrack, float fadeDuration = 0.5f)
+    IEnumerator AnimateMusicCrossfade(int sourceIndex, AudioClip nextTrack, float fadeDuration = 0.5f)
     {
+        AudioSource music_source = music_sources[sourceIndex];
         float percent = 0f;
         while (percent < 1)
         {
