@@ -16,6 +16,8 @@ public class Fish : MonoBehaviour
 #region parameters
     [field: SerializeField] public int Name { get; private set; }
     [field: SerializeField] public int ID { get; private set; }
+    [field: SerializeField] public int Image { get; private set; }
+    [field: SerializeField] public string FlavorText { get; private set; }
     
     [field: SerializeField] public float Space { get; private set; }
     [field: SerializeField] public float Cleanliness { get; private set; }

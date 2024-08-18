@@ -5,6 +5,8 @@ using UnityEngine;
 public class Decoration : MonoBehaviour {
     [field: SerializeField] public int Name { get; private set; }
     [field: SerializeField] public int ID { get; private set; }
+    [field: SerializeField] public int Image { get; private set; }
+    [field: SerializeField] public string FlavorText { get; private set; }
     [field: SerializeField] public DecoType Type { get; private set; }
 
     [field: SerializeField] public List<DecoType> ValidAttachToTypes { get; private set; }

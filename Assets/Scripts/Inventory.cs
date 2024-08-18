@@ -59,7 +59,8 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < contentItems.Count; i++)
         {
             var item = Instantiate(m_ItemPrefab);
-            item.GetComponentInChildren<TMP_Text>().text = contentItems[i];
+            // TODO: fetch content as images
+            // item.GetComponentInChildren<TMP_Text>().text = contentItems[i];
             item.transform.SetParent(m_ContentContainer);
             item.transform.localScale = Vector2.one;
         }
