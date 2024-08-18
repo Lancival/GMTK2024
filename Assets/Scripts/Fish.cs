@@ -30,6 +30,15 @@ public class Fish : MonoBehaviour
     // How likely the fish will turn before reaching the wall (0 - 100)
     public float turn_probability;
 
+    // How frequent an impulse force is applied to the fish
+    public float impulse_probability;
+
+    // How long a fish's burst swim lasts
+    public float burst_duration;
+
+    // How many seconds until we check if the fish will swim
+    public float swim_frequency;
+
     // The distance between the actual wall collider and where the fish will turn. A value of 0 means the fish will turn after colliding with the wall 
     public float wall_buffer;
 
@@ -38,7 +47,33 @@ public class Fish : MonoBehaviour
 
 #endregion
 
-#region Movement
+#region members
+    float elapsed_time;
+    bool is_swimming;
+
+#endregion
+
+    void Start()
+    {
+        m_RigidBody2D = GetComponent<Rigidbody2D>();
+
+        // Assign initial direction where the fish will swim
+        m_Direction = PickDirection();
+        elapsed_time = 0;
+        is_swimming = false;
+    }
+
+    void FixedUpdate()
+    {
+        CheckCollisions();
+        
+        elapsed_time+= Time.fixedDeltaTime;
+        if ( elapsed_time > swim_frequency )
+        {
+            SwimCheck();
+            elapsed_time = 0;
+        }
+    }
 
     Vector2 PickDirection()
     {
@@ -46,7 +81,31 @@ public class Fish : MonoBehaviour
         return directions[Random.Range(0, directions.Length)];
     }
 
-    void Swim()
+    void TurnCheck()
+    {
+        // Flip directions if probability is met
+        var probability = Mathf.Clamp(turn_probability, 0, 100);
+        var roll = Random.Range(1, 100);
+        if (probability >= roll)
+        {
+            m_Direction *= -1; 
+        }
+    }
+
+    void SwimCheck()
+    {
+        var swim_roll = Random.Range(1, 100);
+        var swim_probability = Mathf.Clamp(impulse_probability, 0, 100);
+        if (swim_probability >= swim_roll)
+        {
+            if (!is_swimming)
+            {
+                StartCoroutine(Swim());
+            }
+        }
+    }
+
+    void CheckCollisions()
     {
         // TODO: support non-unit vector directions
         // Calculate distance to tank boundary
@@ -55,39 +114,37 @@ public class Fish : MonoBehaviour
         filter.SetLayerMask(tank_layer);
         var results = new List<RaycastHit2D>();
         int hits = Physics2D.Raycast(transform.position, m_Direction, filter, results, Mathf.Infinity);
-        Assert.IsTrue(hits == 1);
         foreach (RaycastHit2D hit in results)
         {
             currentDistance = hit.distance;
         }
 
-        if  (currentDistance < wall_buffer)
-        {   
-            m_Direction *= -1;
-            return;
-        }
-        else
+        if (currentDistance <= wall_buffer)
         {
-            // Flip directions if probability is met
-            var probability = Mathf.Clamp(turn_probability, 0, 100);
-            var roll = Random.Range(0, 100);
-            if (probability >= roll)
-            {
-                m_Direction *= -1; 
-            }
+            m_RigidBody2D.velocity = new Vector2(0f,0f);
+            m_Direction *= -1;
         }
     }
-    
-    #endregion
 
-    void Start()
+    IEnumerator Swim()
     {
-        // Assign initial direction where the fish will swim
-        m_Direction = PickDirection();
-    }
+        TurnCheck();
+        
+        float elapsedTime = 0f;
+        while (elapsedTime < burst_duration)
+        {
+            is_swimming = true;
 
-    void FixedUpdate()
-    {
-        Swim();
+            // Apply force in the current direction
+            m_RigidBody2D.AddForce(speed * m_Direction);
+
+            // Wait for the next physics frame
+            yield return new WaitForFixedUpdate();
+
+            // Accumulate elapsed time
+            elapsedTime += Time.fixedDeltaTime;
+        }
+
+        is_swimming = false;
     }
 }
