@@ -1,17 +1,18 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class UITooltipOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class UIOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
   [Tooltip("Time cursor must hover before tooltip will appear")]
   [Range(0f, 1f)]
   [SerializeField] private float hoverTime = 0.5f;
 
-  [Tooltip("Tooltip prefab")]
-  [SerializeField] private GameObject tooltipPrefab;
+  public UnityEvent<GameObject> startHover;
+  public UnityEvent<GameObject> stopHover;
 
   private bool hovering = false;
   private float enterTime = 0f;
-  private GameObject tooltip;
+  private bool invoked = false;
 
   public void OnPointerEnter(PointerEventData eventData) {
     hovering = true;
@@ -20,14 +21,14 @@ public class UITooltipOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
   public void OnPointerExit(PointerEventData eventData) {
     hovering = false;
-    Destroy(tooltip);
-    tooltip = null;
+    stopHover.Invoke(gameObject);
+    invoked = false;
   }
 
   void Update() {
-    if (hovering && !tooltip && Time.time - enterTime > hoverTime) {
-      tooltip = Instantiate(tooltipPrefab, transform);
-      // TODO: Update tooltip text
+    if (hovering && !invoked && Time.time - enterTime > hoverTime) {
+      startHover.Invoke(gameObject);
+      invoked = true;
     }
   }
 

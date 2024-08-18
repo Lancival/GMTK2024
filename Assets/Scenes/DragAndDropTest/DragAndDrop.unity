@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 592030100}
   - component: {fileID: 592030102}
   - component: {fileID: 592030103}
+  - component: {fileID: 592030104}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -364,6 +365,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverTime: 0.5
+  startHover:
+    m_PersistentCalls:
+      m_Calls: []
+  stopHover:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &592030104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592030098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64bf153709c6946649921ea08d842742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   tooltipPrefab: {fileID: 7308589991485724587, guid: 96ec34b6392a8420d9fbeffe97defb2a, type: 3}
 --- !u!1 &619394800
 GameObject:
