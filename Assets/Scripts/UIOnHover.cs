@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using System.Collections;
 
 public class UIOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
   [Tooltip("Time cursor must hover before tooltip will appear")]
@@ -10,26 +11,26 @@ public class UIOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
   public UnityEvent<GameObject> startHover;
   public UnityEvent<GameObject> stopHover;
 
-  private bool hovering = false;
+  private Coroutine detectHover;
   private float enterTime = 0f;
-  private bool invoked = false;
 
   public void OnPointerEnter(PointerEventData eventData) {
-    hovering = true;
     enterTime = Time.time;
+    detectHover = StartCoroutine(DetectHover());
   }
 
   public void OnPointerExit(PointerEventData eventData) {
-    hovering = false;
-    stopHover.Invoke(gameObject);
-    invoked = false;
-  }
-
-  void Update() {
-    if (hovering && !invoked && Time.time - enterTime > hoverTime) {
-      startHover.Invoke(gameObject);
-      invoked = true;
+    if (detectHover != null) {
+      StopCoroutine(detectHover);
     }
+    detectHover = null;
+    stopHover.Invoke(gameObject);
   }
 
+  private IEnumerator DetectHover() {
+    while (Time.time - enterTime < hoverTime) {
+      yield return null;
+    }
+    startHover.Invoke(gameObject);
+  }
 }
