@@ -18,21 +18,39 @@ public class DragAndDrop : MonoBehaviour {
       transform.position = CalculateDropPosition(mousePos);
       if (mouse.leftButton.wasReleasedThisFrame) {
         dragging = false;
-        
-        if (!IsInTank(mousePos)) 
+
+        // Added to tank successfully
+        if (IsInTank(mousePos, out Tank tank) && tank.Add(gameObject)) 
         {
-          Destroy(gameObject);
+          return;
         }
+        
+        Destroy(gameObject);
       }
     }
   }
 
-  void OnMouseDown() => dragging = true;
-  
-  bool IsInTank(Vector2 mousePosition)
+  void OnMouseDown() 
   {
+    dragging = true;
+    Vector2 mousePos = Mouse.current.position.ReadValue();
+    if (IsInTank(mousePos, out Tank tank)) 
+    {
+      tank.Remove(gameObject);
+    }
+  } 
+  
+  bool IsInTank(Vector2 mousePosition, out Tank tank) 
+  {
+    tank = null;
+    
     Ray ray = cam.ScreenPointToRay(mousePosition);
     RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 100, tankLayer);
+    if (hit.collider != null && hit.collider.TryGetComponent(out Tank t)) {
+      tank = t;
+      return true;
+    }
+    
     return hit.collider != null;
   }
 
