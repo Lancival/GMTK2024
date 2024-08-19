@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clownfish
+      name: Clown fish
       rect:
         serializedVersion: 2
         x: 2999
@@ -385,7 +385,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Clownfish: 1256606839
+      Clown fish: 1256606839
       Rock: -1997465511
       Seaweed: -844214532
       fish_1: 258658405

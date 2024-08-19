@@ -591,6 +591,7 @@ GameObject:
   - component: {fileID: 222803748}
   - component: {fileID: 222803749}
   - component: {fileID: 222803750}
+  - component: {fileID: 222803751}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -641,11 +642,25 @@ MonoBehaviour:
   <currentStage>k__BackingField: 0
   <stages>k__BackingField:
   - name: Main
-    order: 0
+    order: 1
   - name: 
-    order: 0
+    order: 2
   - name: 
-    order: 0
+    order: 3
+--- !u!114 &222803751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222803747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df973b0889a0a3142a140e1591e0540a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishPrefab: {fileID: 362009397421937482, guid: 5ffda553d78ca3d4e9a2cb7725581148, type: 3}
+  decorationPrefab: {fileID: 6938321074913279892, guid: 741ce8dd058b8b74ab0b97163f6fcc99, type: 3}
 --- !u!1 &284595494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,6 +1449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 1039724295537605621, guid: 5ffda553d78ca3d4e9a2cb7725581148, type: 3}
+      propertyPath: dragging
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3635742526438152047, guid: 5ffda553d78ca3d4e9a2cb7725581148, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05
@@ -1518,11 +1537,6 @@ MonoBehaviour:
     MinGood: 0
     MaxGood: 10
     MaxOk: 10
-  <VarietyRange>k__BackingField:
-    MinOk: 1
-    MinGood: 2
-    MaxGood: 3
-    MaxOk: 5
   tank: {fileID: 575343889}
 --- !u!4 &489749247
 Transform:

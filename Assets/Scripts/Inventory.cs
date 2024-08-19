@@ -12,8 +12,8 @@ public class Inventory : MonoBehaviour {
     int level;
 
     void Start() {
-        PopulateFishes();
         level = GameManager.Instance.currentStage;
+        PopulateFishes();
     }
 
     public void PopulateFishes() {
@@ -46,6 +46,7 @@ public class Inventory : MonoBehaviour {
 
             InventoryItem invItem = item.GetComponent<InventoryItem>();
             invItem.SpawnName = contentItems[i].name;
+            invItem.AssetType = contentItems[i].assetType;
         }
     }
 }

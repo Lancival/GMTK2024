@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class InventoryItem : MonoBehaviour {
     public string SpawnName;
+    public string AssetType;
 
     public void SpawnItem() {
-        StatsDatabase.StatItem statItem = StatsDatabase.Items.Find(x => x.name == SpawnName);
         // TODO: create fish or deco game object from statItem
+        if (AssetType == "Fish") {
+            Factory.Instance.CreateFish(SpawnName, transform.position);
+        } else if (AssetType == "Decoration") {
+            Factory.Instance.CreateDeco(SpawnName, transform.position);
+        }
     }
 }
