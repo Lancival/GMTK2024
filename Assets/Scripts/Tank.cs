@@ -7,6 +7,8 @@ public class Tank : MonoBehaviour {
     [field: SerializeField] public List<Fish> Fishes { get; private set; }
     [field: SerializeField] public List<Decoration> Decorations { get; private set; }
 
+    [field: SerializeField] public int Capacity { get; private set; }
+
     public event Action OnFishAdded;
     public event Action OnFishRemoved;
     public event Action OnDecoAdded;

@@ -1548,6 +1548,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 452747738026136038, guid: d6bb82baf90464a4f9fcda549935d121, type: 3}
+      propertyPath: <Capacity>k__BackingField
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1591528154726575457, guid: d6bb82baf90464a4f9fcda549935d121, type: 3}
       propertyPath: m_Name
       value: Tank
