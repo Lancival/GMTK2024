@@ -6,12 +6,29 @@ public class HoverEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public event Action OnHoverEnter;
     public event Action OnHoverExit;
 
+    private InventoryItem item;
+
     bool isHovering;
 
+    void Start()
+    {
+        item = GetComponent<InventoryItem>();
+    }
+
     public void OnPointerEnter(PointerEventData eventData) {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Inventory_Fish_Hover");
         if (!isHovering) {
             isHovering = true;
             OnHoverEnter?.Invoke();
+        }
+
+        if (item.AssetType == "Fish")
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Inventory_Fish_Hover");
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Inventory_Dec_Hover");
         }
     }
 

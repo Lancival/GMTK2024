@@ -14,7 +14,7 @@ public class InstantiateTooltipOnHover : MonoBehaviour {
   }
 
   void Instantiate(GameObject invoker) {
-    tooltip = GameObject.Instantiate(tooltipPrefab, invoker.transform);
+        tooltip = GameObject.Instantiate(tooltipPrefab, invoker.transform);
     // TODO: Update tooltip text
   }
 

@@ -44,10 +44,12 @@ public class UIManager : MonoBehaviour {
         if (objectivesPanel.alpha == 0)
         {
             objectivesPanel.DOFade(1.0f, tp.PanelFadeDur);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Open");
         }
         else
         {
             objectivesPanel.DOFade(0.0f, tp.PanelFadeDur);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Close");
         }
     }
 }

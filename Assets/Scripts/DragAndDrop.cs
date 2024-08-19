@@ -24,12 +24,15 @@ public class DragAndDrop : MonoBehaviour {
       transform.position = CalculateDropPosition(mousePos);
       if (mouse.leftButton.wasReleasedThisFrame) {
         dragging = false;
-        AudioPlayer.SFXPlayPlace();
         
         if (!IsInTank(mousePos)) 
         {
           AudioPlayer.SFXPlayReturn();
           Destroy(gameObject);
+        }
+        else
+        {
+          AudioPlayer.SFXPlayPlace();
         }
       }
     }

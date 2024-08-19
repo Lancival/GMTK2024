@@ -15,9 +15,10 @@ public class UIOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
   private float enterTime = 0f;
 
   public void OnPointerEnter(PointerEventData eventData) {
+    
     enterTime = Time.time;
     detectHover = StartCoroutine(DetectHover());
-  }
+    }
 
   public void OnPointerExit(PointerEventData eventData) {
     if (detectHover != null) {
