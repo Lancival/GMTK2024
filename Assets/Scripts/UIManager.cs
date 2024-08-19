@@ -19,6 +19,9 @@ public class UIManager : MonoBehaviour {
     InfoPanelUI infoPanelUI;
     bool infoIsOpen;
 
+    [Header("Objectives Panel")]
+    [SerializeField] CanvasGroup objectivesPanel;
+
     [SerializeField] UITweenParameters tp;
 
     void Awake() {
@@ -35,9 +38,22 @@ public class UIManager : MonoBehaviour {
         infoPanel.transform.DOMove(infoIsOpen ? infoClosePos.position : infoOpenPos.position, tp.PanelSlideDur);
         infoIsOpen = !infoIsOpen;
     }
+
+    public void ToggleObjectivesPanel() {
+        DOTween.Kill(objectivesPanel);
+        if (objectivesPanel.alpha == 0)
+        {
+            objectivesPanel.DOFade(1.0f, tp.PanelFadeDur);
+        }
+        else
+        {
+            objectivesPanel.DOFade(0.0f, tp.PanelFadeDur);
+        }
+    }
 }
 
 [Serializable]
 public struct UITweenParameters {
     public float PanelSlideDur;
+    public float PanelFadeDur;
 }

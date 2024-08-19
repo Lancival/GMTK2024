@@ -8,11 +8,11 @@ public class MainButtons : MonoBehaviour
 
     private void Start()
     {
-        m_ObjectiveUI.SetActive(false);
+        m_ObjectiveUI.GetComponent<CanvasGroup>().alpha = 0f;
     }
 
     public void ShowObjectiveUI()
     {
-        m_ObjectiveUI.SetActive(true);
+        m_ObjectiveUI.GetComponent<CanvasGroup>().alpha = 1f;
     }
 }

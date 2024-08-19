@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 6184049278124010043}
   - component: {fileID: 7610553134538109557}
   - component: {fileID: 2609831810579614971}
+  - component: {fileID: 1489410177055145054}
   m_Layer: 5
   m_Name: ObjectivePanel
   m_TagString: Untagged
@@ -370,6 +371,18 @@ MonoBehaviour:
   m_objectiveItemBottomCheckboxEmpty: {fileID: 5210845775812438675}
   m_objectiveItemBottomCheckboxChecked: {fileID: 8928009599633042387}
   m_objectiveItemBottomText: {fileID: 238621104793033118}
+--- !u!225 &1489410177055145054
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5968700179501738052}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &2645826242780068105
 PrefabInstance:
   m_ObjectHideFlags: 0
