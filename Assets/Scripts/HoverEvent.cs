@@ -16,7 +16,6 @@ public class HoverEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Inventory_Fish_Hover");
         if (!isHovering) {
             isHovering = true;
             OnHoverEnter?.Invoke();
