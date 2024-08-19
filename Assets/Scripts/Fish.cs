@@ -14,15 +14,16 @@ public class Fish : MonoBehaviour
 #endregion
 
 #region parameters
-    [field: SerializeField] public int Name { get; private set; }
+    [field: SerializeField] public string Name { get; private set; }
     [field: SerializeField] public int ID { get; private set; }
+    [field: SerializeField] public Sprite Sprite { get; private set; }
+    [field: SerializeField] public string FlavorText { get; private set; }
     
     [field: SerializeField] public float Space { get; private set; }
     [field: SerializeField] public float Cleanliness { get; private set; }
         
     [field: SerializeField] public IdealRange SpaceRange { get; private set; }
     [field: SerializeField] public IdealRange CleanlinessRange { get; private set; }
-    [field: SerializeField] public IdealRange VarietyRange { get; private set; }
 
     // How fast the fish will swim
     public float speed;
@@ -61,6 +62,16 @@ public class Fish : MonoBehaviour
         m_Direction = PickDirection();
         elapsed_time = 0;
         is_swimming = false;
+    }
+
+    public void Init(StatsDatabase.StatItem statItem) {
+        Name = statItem.name;
+        Sprite = statItem.sprite;
+        Space = int.Parse(statItem.space);
+        Cleanliness = int.Parse(statItem.waterQuality);
+        // TODO: Flavortext
+
+        GetComponent<SpriteRenderer>().sprite = Sprite;
     }
 
     void FixedUpdate()
