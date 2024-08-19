@@ -9,7 +9,6 @@ public class ObjectiveManager : MonoBehaviour {
     // Fish Requirements (Average)
     [field: SerializeField] public IdealRange SpaceRange { get; private set; }
     [field: SerializeField] public IdealRange CleanlinessRange { get; private set; }
-    [field: SerializeField] public IdealRange VarietyRange { get; private set; }
 
     [SerializeField] Tank tank;
 
@@ -35,8 +34,7 @@ public class ObjectiveManager : MonoBehaviour {
 
     public bool AllRequirementsComplete() {
         return SpaceRange.IsGood(CalculateSpaceLevel()) &&
-               CleanlinessRange.IsGood(CalculateCleanlinessLevel()) &&
-               VarietyRange.IsGood(CalculateVarietyLevel());
+               CleanlinessRange.IsGood(CalculateCleanlinessLevel());
     }
 
     /// <summary>
@@ -52,11 +50,6 @@ public class ObjectiveManager : MonoBehaviour {
         CleanlinessRange.MinGood = tank.Fishes.Average(x => x.CleanlinessRange.MinGood);
         CleanlinessRange.MaxGood = tank.Fishes.Average(x => x.CleanlinessRange.MaxGood);
         CleanlinessRange.MaxOk = tank.Fishes.Average(x => x.CleanlinessRange.MaxOk);
-        
-        VarietyRange.MinOk = tank.Fishes.Average(x => x.VarietyRange.MinOk);
-        VarietyRange.MinGood = tank.Fishes.Average(x => x.VarietyRange.MinGood);
-        VarietyRange.MaxGood = tank.Fishes.Average(x => x.VarietyRange.MaxGood);
-        VarietyRange.MaxOk = tank.Fishes.Average(x => x.VarietyRange.MaxOk);
     }
 
     float CalculateSpaceLevel() { return tank.Fishes.Sum(x => x.Space) + tank.Decorations.Sum(x => x.Space); }

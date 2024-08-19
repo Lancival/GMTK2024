@@ -626,11 +626,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28984e65b03ae5408ad3dce2679c5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <stage>k__BackingField: 0
+  <currentStage>k__BackingField: 0
   <stages>k__BackingField:
-  - Main
-  - 
-  - 
+  - name: 
+    order: 0
+  - name: 
+    order: 0
+  - name: 
+    order: 0
 --- !u!1 &284595494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,6 +1620,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1591528154726575457, guid: d6bb82baf90464a4f9fcda549935d121, type: 3}
       propertyPath: m_Name
+      value: Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591528154726575457, guid: d6bb82baf90464a4f9fcda549935d121, type: 3}
+      propertyPath: m_TagString
       value: Tank
       objectReference: {fileID: 0}
     - target: {fileID: 3986108098441907667, guid: d6bb82baf90464a4f9fcda549935d121, type: 3}
