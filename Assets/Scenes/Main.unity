@@ -254,7 +254,6 @@ MonoBehaviour:
   m_Tabs:
   - {fileID: 1785711285}
   - {fileID: 1517785751}
-  statsDB: {fileID: 222803749}
 --- !u!1 &134500575
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222803748}
   - component: {fileID: 222803749}
+  - component: {fileID: 222803750}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -614,6 +614,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_StatsDatabaseText: {fileID: 4900000, guid: 3266270fb9c596543b874fdb795d38e3, type: 3}
+--- !u!114 &222803750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222803747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a28984e65b03ae5408ad3dce2679c5ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <stage>k__BackingField: 0
+  <stages>k__BackingField:
+  - Main
+  - 
+  - 
 --- !u!1 &284595494
 GameObject:
   m_ObjectHideFlags: 0
