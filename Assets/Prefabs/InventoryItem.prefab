@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnName: 
+  AssetType: 
 --- !u!1 &5683491185873903262
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +260,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 1256606839, guid: 99fe4d8ece8173a46baa7e8455560c25, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
