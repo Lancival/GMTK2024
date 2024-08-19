@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Factory : Singleton<Factory> {
@@ -15,6 +16,8 @@ public class Factory : Singleton<Factory> {
         
         Fish fish = Instantiate(fishPrefab, pos, Quaternion.identity).GetComponent<Fish>();
         fish.Init(statItem);
+        Collider2D col = fish.AddComponent<CircleCollider2D>();
+        col.isTrigger = true;
 
         return fish;
     }
@@ -28,6 +31,8 @@ public class Factory : Singleton<Factory> {
         
         Decoration deco = Instantiate(decorationPrefab, pos, Quaternion.identity).GetComponent<Decoration>();
         deco.Init(statItem);
+        Collider2D col = deco.AddComponent<CircleCollider2D>();
+        col.isTrigger = true;
 
         return deco;
     }
