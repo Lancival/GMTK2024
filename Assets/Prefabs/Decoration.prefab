@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4010797580654815108}
   - component: {fileID: 9145384263213785076}
   - component: {fileID: 9218515142783620216}
+  - component: {fileID: 7585787110840709834}
   m_Layer: 0
   m_Name: Decoration
   m_TagString: Untagged
@@ -172,3 +173,15 @@ MonoBehaviour:
   tankLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &7585787110840709834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938321074913279892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f166485c1c2693145867051eb6ee84be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -9,7 +9,13 @@ public class DragAndDrop : MonoBehaviour {
   
   private Camera cam;
 
-  void Start() => cam = Camera.main;
+  private SFXItems AudioPlayer;
+
+  void Start()
+   {
+    cam = Camera.main;
+    AudioPlayer = GetComponent<SFXItems>();
+   }
 
   void Update() {
     if (dragging) {
@@ -18,17 +24,23 @@ public class DragAndDrop : MonoBehaviour {
       transform.position = CalculateDropPosition(mousePos);
       if (mouse.leftButton.wasReleasedThisFrame) {
         dragging = false;
+        AudioPlayer.SFXPlayPlace();
         
         if (!IsInTank(mousePos)) 
         {
+          AudioPlayer.SFXPlayReturn();
           Destroy(gameObject);
         }
       }
     }
   }
 
-  void OnMouseDown() => dragging = true;
-  
+  void OnMouseDown()
+  {
+    dragging = true;
+    AudioPlayer.SFXPlaySelect();
+  }
+
   bool IsInTank(Vector2 mousePosition)
   {
     Ray ray = cam.ScreenPointToRay(mousePosition);
