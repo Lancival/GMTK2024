@@ -7,10 +7,8 @@ public class Factory : Singleton<Factory> {
     [SerializeField] GameObject fishPrefab;
     [SerializeField] GameObject decorationPrefab;
 
-    public Fish CreateFish(string name, Vector2 pos) {
-        StatsDatabase.StatItem statItem = StatsDatabase.Items.Find(x => x.name == name);
-        if (statItem == null) {
-            Debug.LogError($"Unable to find fish data: {name}");
+    public Fish CreateFish(StatsDatabase.StatItem statItem, Vector2 pos) {
+        if (statItem == null || statItem.assetType != "Fish") {
             return null;
         }
         
@@ -22,10 +20,8 @@ public class Factory : Singleton<Factory> {
         return fish;
     }
     
-    public Decoration CreateDeco(string name, Vector2 pos) {
-        StatsDatabase.StatItem statItem = StatsDatabase.Items.Find(x => x.name == name);
-        if (statItem == null) {
-            Debug.LogError($"Unable to find decoration data: {name}");
+    public Decoration CreateDeco(StatsDatabase.StatItem statItem, Vector2 pos) {
+        if (statItem == null || statItem.assetType != "Decoration") {
             return null;
         }
         
