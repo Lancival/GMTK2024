@@ -3,44 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 using System;
+using System.Linq;
 
-public class StatsDatabase : MonoBehaviour
-{
+public class StatsDatabase : MonoBehaviour {
     [SerializeField] private TextAsset m_StatsDatabaseText;
 
+    const string spritesPath = "Sprites/";
+
     [System.Serializable]
-    public class StatItem
-    {
-        public string stage;
+    public class StatItem {
+        public int stage;
         public string assetType;
         public string name;
+        public Sprite sprite;
         public string space;
         public string waterQuality;
         public string diversity;
         public string size;
         public string notes;
     }
+    
+    private static List<StatItem> m_items;
 
-    private List<StatItem> m_stats = new();
+    public static List<StatItem> Items { get { return m_items; } }
 
-    public List<StatItem> stats { get { return m_stats; } }
+    List<Sprite> sprites;
 
-    void Start()
-    {
+    void Awake() {
+        m_items = new();
+        sprites = LoadSprites();
         ReadCSV();
     }
 
-    void ReadCSV()
-    {
+    void ReadCSV() {
         string[] dataLines = m_StatsDatabaseText.text.Split('\n');
 
-        for (int i = 1; i < dataLines.Length; i++)
-        {
+        for (int i = 1; i < dataLines.Length; i++) {
             var data = dataLines[i].Split(',');
             Assert.AreEqual(data.Length, 8);
-            var statItem = new StatItem
-            {
-                stage = data[0],
+            var statItem = new StatItem {
                 assetType = data[1],
                 name = data[2],
                 space = data[3],
@@ -49,7 +50,41 @@ public class StatsDatabase : MonoBehaviour
                 size = data[6],
                 notes = data[7]
             };
-            m_stats.Add(statItem);
+
+            switch (data[0]) {
+                case "1 - Child":
+                    statItem.stage = 1;
+                    break;
+                case "2 - Teenager":
+                    statItem.stage = 2;
+                    break;
+                case "3 - Adult":
+                    statItem.stage = 3;
+                    break;
+                case "4 - Senior":
+                    statItem.stage = 4;
+                    break;
+            }
+
+            foreach (Sprite sprite in sprites) {
+                if (sprite.name == statItem.name) {
+                    statItem.sprite = sprite;
+                    break;
+                }
+            }
+
+            Items.Add(statItem);
         }
+    }
+
+    List<Sprite> LoadSprites() {
+        Sprite[] sArr = Resources.LoadAll<Sprite>(spritesPath);
+
+        if (sArr == null || sArr.Length == 0) {
+            Debug.LogError($"No sprites found at path '{spritesPath}'.");
+            return null;
+        }
+
+        return new List<Sprite>(sArr);
     }
 }
