@@ -10,9 +10,9 @@ public class InventoryItem : MonoBehaviour {
     public void SpawnItem() {
         // TODO: create fish or deco game object from statItem
         if (AssetType == "Fish") {
-            Factory.Instance.CreateFish(SpawnName);
+            Factory.Instance.CreateFish(SpawnName, transform.position);
         } else if (AssetType == "Decoration") {
-            Factory.Instance.CreateDeco(SpawnName);
+            Factory.Instance.CreateDeco(SpawnName, transform.position);
         }
     }
 }

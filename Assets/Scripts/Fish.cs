@@ -70,6 +70,8 @@ public class Fish : MonoBehaviour
         Space = int.Parse(statItem.space);
         Cleanliness = int.Parse(statItem.waterQuality);
         // TODO: Flavortext
+
+        GetComponent<SpriteRenderer>().sprite = Sprite;
     }
 
     void FixedUpdate()

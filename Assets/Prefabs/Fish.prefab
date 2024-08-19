@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 0
   <ID>k__BackingField: 0
-  <Image>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 0}
   <FlavorText>k__BackingField: 
   <Space>k__BackingField: 0
   <Cleanliness>k__BackingField: 0
@@ -174,11 +174,6 @@ MonoBehaviour:
     MaxGood: 0
     MaxOk: 0
   <CleanlinessRange>k__BackingField:
-    MinOk: 0
-    MinGood: 0
-    MaxGood: 0
-    MaxOk: 0
-  <VarietyRange>k__BackingField:
     MinOk: 0
     MinGood: 0
     MaxGood: 0
@@ -205,3 +200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragging: 1
+  tankLayer:
+    serializedVersion: 2
+    m_Bits: 8

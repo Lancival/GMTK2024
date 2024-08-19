@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 0
   <ID>k__BackingField: 0
-  <Image>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 0}
   <FlavorText>k__BackingField: 
   <Type>k__BackingField: 0
   <ValidAttachToTypes>k__BackingField: 
@@ -169,3 +169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragging: 1
+  tankLayer:
+    serializedVersion: 2
+    m_Bits: 8

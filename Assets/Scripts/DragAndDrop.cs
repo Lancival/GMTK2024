@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(SpriteRenderer))]
 public class DragAndDrop : MonoBehaviour {
   public bool dragging = true;
+  [SerializeField] LayerMask tankLayer;
+  
   private Camera cam;
 
   void Start() => cam = Camera.main;
@@ -12,11 +14,12 @@ public class DragAndDrop : MonoBehaviour {
   void Update() {
     if (dragging) {
       Mouse mouse = Mouse.current;
-      transform.position = CalculateDropPosition(mouse.position.ReadValue());
+      Vector2 mousePos = mouse.position.ReadValue();
+      transform.position = CalculateDropPosition(mousePos);
       if (mouse.leftButton.wasReleasedThisFrame) {
         dragging = false;
         
-        if (!IsInTank(Mouse.current.position.ReadValue())) 
+        if (!IsInTank(mousePos)) 
         {
           Destroy(gameObject);
         }
@@ -29,17 +32,10 @@ public class DragAndDrop : MonoBehaviour {
   bool IsInTank(Vector2 mousePosition)
   {
     Ray ray = cam.ScreenPointToRay(mousePosition);
-    RaycastHit hit;
-    if (Physics.Raycast(ray, out hit, 100))
-    {
-      if (hit.collider.CompareTag("Tank")) 
-      {
-        return true;
-      }
-    }
-
-    return false;
+    RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 100, tankLayer);
+    return hit.collider != null;
   }
+
 
   private Vector2 CalculateDropPosition(Vector2 mousePosition) => cam.ScreenToWorldPoint(mousePosition);
 }

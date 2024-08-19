@@ -23,6 +23,8 @@ public class Decoration : MonoBehaviour {
         Space = int.Parse(statItem.space);
         Cleanliness = int.Parse(statItem.waterQuality);
         // TODO: Flavortext
+        
+        GetComponent<SpriteRenderer>().sprite = Sprite;
     }
     
     public bool CanPlace(Decoration attachToDeco) {
