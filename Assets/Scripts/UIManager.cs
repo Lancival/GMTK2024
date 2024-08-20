@@ -20,6 +20,9 @@ public class UIManager : Singleton<UIManager> {
 
     [SerializeField] UITweenParameters tp;
 
+    [Header("Complete Button")]
+    public RectTransform completeButton;
+
     void Awake() { infoPanelUI = infoPanel.GetComponent<InfoPanelUI>(); }
 
     public void ToggleInventoryPanel(bool enable) {
