@@ -1,55 +1,91 @@
-Stage,Asset Type,Name,Space,Water Quality,Diversity,size (in),notes
-1 - Child,Fish,Clown fish,1,-2,1,2,"His name is Marlin, after Marlin in Finding Nemo! ""Fish are friends, not food."""
-1 - Child,Decoration,Rock,1,0,1,4,
-1 - Child,Decoration,Seaweed,1,2,1,4,
+Stage,Asset Type,Name,Space,Water Quality,Diversity,Size,Notes
+1 - Child,Fish,Clownfish,1,-2,1,2,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+1 - Child,Fish,White Clownfish,1,-2,1,2,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+1 - Child,Decoration,Rock,1,0,1,4,Mom told me to never take rocks from the ocean — leave nature as you found it!
+1 - Child,Decoration,Seaweed,1,2,1,4,Did ya know that seaweed is not a plant? It's actually an algae!
 1 - Child,Environment,Fish Bowl,,,,,
 1 - Child,Environment,Background,,,,,
 1 - Child,Miscellaneous,Cutscene,,,,,
-2 - Teenager,Fish,Blue Tang,3,-1,1,10,
-2 - Teenager,Fish,Hawkfish,2,-1,1,4,
-2 - Teenager,Fish,Sea Butterfly,1,-1,1,0.5,
-2 - Teenager,Fish,Sea Snail,1,1,1,1,
-2 - Teenager,Fish,Clown fish,2,-1,1,4,grew up!
-2 - Teenager,Fish,Cherry Shrimp,1,1,1,2,
-2 - Teenager,Decoration,Rocky Cave,1,0,1,,
-2 - Teenager,Decoration,Seaweed Patch,1,1,1,,
-2 - Teenager,Decoration,Driftwood,1,0,1,,
-2 - Teenager,Decoration,Coral - sea fan,2,1,1,,
-2 - Teenager,Decoration,Coral - capnella,2,1,1,,
-2 - Teenager,Decoration,Coral - clavularia,2,1,1,,
-2 - Teenager,Decoration,Rocks,1,0,1,,
-2 - Teenager,Decoration,Sea Anemone,2,1,1,,
-2 - Teenager,Decoration,Sunken Treasure,1,0,1,,
+2 - Teenager,Fish,Blue Tang,3,-1,1,10,Blue Tang can make themselves semi-transparent to evade predators. Fish are really so cool!
+2 - Teenager,Fish,Hawkfish,2,-1,1,4,"Hawkfish are an aggressive species. Just like in real life, there are fish bullies."
+2 - Teenager,Fish,Sea Butterfly,1,-1,1,0.5,"Sea butterflies are sensitive, yet beautiful creatures. "
+2 - Teenager,Fish,Purple Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+2 - Teenager,Fish,Blue Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+2 - Teenager,Fish,Orange Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+2 - Teenager,Fish,Clownfish,2,-1,1,,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+2 - Teenager,Fish,White Clownfish,2,-1,1,2,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+2 - Teenager,Fish,Cherry Shrimp,1,1,1,,"I'm sweet like a cherry but don't eat me! I have a pit, it's my heart!"
+2 - Teenager,Decoration,Rocky Cave,1,0,1,,A lil' hang out spot for my fish!
+2 - Teenager,Decoration,Seaweed Patch,1,4,1,,Mom makes me seaweed soup whenever I'm sick.
+2 - Teenager,Decoration,Capnella Coral,2,2,1,,Coral derives its color from algae and protein pigments. 
+2 - Teenager,Decoration,Rocks,1,0,1,,Taking care of fish is so therapeutic. I hope I can do this as a job one day.
+3 - Adult,Fish,Dumbo Octopus,1,0,1,,"Dumbo Octopi are ALWAYS pregnant. Man, that must be exhausting."
+3 - Adult,Fish,Moon Jellyfish,2,0,1,,"As a kid, I loved admirnig jellyfish at the aquarium. The way they move is mesmirizing."
+3 - Adult,Fish,Baby Jellyfish,1,0,1,,"As a kid, I loved admirnig jellyfish at the aquarium. The way they move is mesmirizing."
+3 - Adult,Fish,Mantis Shrimp,1,2,1,,Mantis shrimp can punch at speeds of 50 mph! They also have 16 color-receptive cones.
+3 - Adult,Fish,Orange Starfish,1,1,1,,"Starfish use seawater, instead of blood, to pump nutrients in their bodies."
+3 - Adult,Fish,Green Starfish,1,1,1,,"Starfish use seawater, instead of blood, to pump nutrients in their bodies."
+3 - Adult,Fish,Pompom Crab,3,1,1,,This crab holds AWESOMENESS (anemone) IN ITS CLAWS!!!
+3 - Adult,Fish,Angelfish,2,-2,1,,Angelfish have spectacular finnage!
+3 - Adult,Fish,Blue Tang,3,-1,1,10,Blue Tang can make themselves semi-transparent to evade predators. Fish are really so cool!
+3 - Adult,Fish,Hawkfish,2,-1,1,4,"Hawkfish are an aggressive species. Just like in real life, there are fish bullies."
+3 - Adult,Fish,Sea Butterfly,1,-1,1,0.5,"Sea butterflies are sensitive, yet beautiful creatures. "
+3 - Adult,Fish,Purple Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+3 - Adult,Fish,Blue Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+3 - Adult,Fish,Orange Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+3 - Adult,Fish,Clownfish,2,-1,1,,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+3 - Adult,Fish,White Clownfish,2,-1,1,2,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+3 - Adult,Fish,Cherry Shrimp,1,1,1,,"I'm sweet like a cherry but don't eat me! I have a pit, it's my heart!"
+3 - Adult,Decoration,Rocky Cave,1,0,1,,A lil' hang out spot for my fish!
+3 - Adult,Decoration,Seaweed Patch,1,4,1,,Mom makes me seaweed soup whenever I'm sick.
+3 - Adult,Decoration,Capnella Coral,2,2,1,,Coral derives its color from algae and protein pigments. 
+3 - Adult,Decoration,Rocks,1,0,1,,Taking care of fish is so therapeutic. I hope I can do this as a job one day.
 2 - Teenager,Environment,Fish Tank,,,,,
 2 - Teenager,Environment,Background,,,,,
 2 - Teenager,Miscellaneous,Cutscene,,,,,
-3 - Adult,Fish,Dumbo Octopi,,,1,,
-3 - Adult,Fish,Jellyfish,,,1,,
-3 - Adult,Fish,Mantis Shrimp,,,1,,
-3 - Adult,Fish,Starfish,,,1,,
-3 - Adult,Fish,Angelfish,,,1,,
-3 - Adult,Fish,Clownfish,,,1,,
-3 - Adult,Decoration,Large Mossy Log,,,1,,
-3 - Adult,Decoration,Large Mossy Rock,,,1,,
-3 - Adult,Decoration,,,,1,,
-3 - Adult,Decoration,,,,1,,
-3 - Adult,Decoration,,,,1,,
-3 - Adult,Decoration,,,,1,,
-3 - Adult,Decoration,,,,1,,
+3 - Adult,Decoration,Large Mossy Log,4,0,1,,My dream job has always been a marine biologist. I wish my younger self could see who I am now.
+3 - Adult,Decoration,Large Mossy Rock,4,0,1,,"There are horse girls, and then there are fish girls."
+3 - Adult,Decoration,Driftwood,1,0,1,,My aquarium is really starting to feel like a mini-ocean now!
+3 - Adult,Decoration,Purple Sea Fan Coral,2,2,1,,I love how vibrant coral is. Nature is neat!
+3 - Adult,Decoration,Red Sea Fan Coral,2,2,1,,I love how vibrant coral is. Nature is neat!
+4 - Senior,Fish,Sunfish,6,-2,1,,"As a kid, I thought sunfish were hideous. I wish Mom could see this tank, now I own one!"
+4 - Senior,Fish,Whale Shark,12,-5,1,,This whale shark's name is Ollie -- she can eat a ton!
+4 - Senior,Fish,Sea Turtles,4,-1,1,,"Sea turtles are the grandparents of the ocean, as they are gentle and live long lives. Similar to me!"
+4 - Senior,Fish,School of Fish,5,-3,1,,"The way a school of fish moves, it's an aquatic dance!"
+4 - Senior,Fish,Manta Ray,5,-2,1,,Manta rays can be as wide as a school bus.
+4 - Senior,Fish,Dumbo Octopi,1,0,1,,"Dumbo Octopi are ALWAYS pregnant. Man, that must be exhausting."
+4 - Senior,Fish,Moon Jellyfish,2,0,1,,"As a kid, I loved admirnig jellyfish at the aquarium. The way they move is mesmirizing."
+4 - Senior,Fish,Baby Jellyfish,1,0,1,,"As a kid, I loved admirnig jellyfish at the aquarium. The way they move is mesmirizing."
+4 - Senior,Fish,Mantis Shrimp,1,2,1,,Mantis shrimp can punch at speeds of 50 mph! They also have 16 color-receptive cones.
+4 - Senior,Fish,Orange Starfish,1,1,1,,"Starfish use seawater, instead of blood, to pump nutrients in their bodies."
+4 - Senior,Fish,Green Starfish,1,1,1,,"Starfish use seawater, instead of blood, to pump nutrients in their bodies."
+4 - Senior,Fish,Pompom Crab,3,1,1,,This crab holds AWESOMENESS (anemone) IN ITS CLAWS!!!
+4 - Senior,Fish,Angelfish,2,-2,1,,Angelfish have spectacular finnage!
+4 - Senior,Fish,Blue Tang,3,-1,1,10,Blue Tang can make themselves semi-transparent to evade predators. Fish are really so cool!
+4 - Senior,Fish,Hawkfish,2,-1,1,4,"Hawkfish are an aggressive species. Just like in real life, there are fish bullies."
+4 - Senior,Fish,Sea Butterfly,1,-1,1,0.5,"Sea butterflies are sensitive, yet beautiful creatures. "
+4 - Senior,Fish,Purple Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+4 - Senior,Fish,Blue Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+4 - Senior,Fish,Orange Sea Snail,1,1,1,1,Sea snails are supposed to be a delicacy.  Yuck.
+4 - Senior,Fish,Clownfish,2,-1,1,,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+4 - Senior,Fish,White Clownfish,2,-1,1,2,"His name is Marlin, after Finding Nemo! Remember, fish are friends, not food."
+4 - Senior,Fish,Cherry Shrimp,1,1,1,,"I'm sweet like a cherry but don't eat me! I have a pit, it's my heart!"
+4 - Senior,Decoration,Rocky Cave,1,0,1,,A lil' hang out spot for my fish!
+4 - Senior,Decoration,Seaweed Patch,1,4,1,,Mom makes me seaweed soup whenever I'm sick.
+4 - Senior,Decoration,Capnella Coral,2,2,1,,Coral derives its color from algae and protein pigments. 
+4 - Senior,Decoration,Rocks,1,0,1,,Taking care of fish is so therapeutic. I hope I can do this as a job one day.
+4 - Senior,Decoration,Large Mossy Log,4,0,1,,My dream job has always been a marine biologist. I wish my younger self could see who I am now.
+4 - Senior,Decoration,Large Mossy Rock,4,0,1,,"There are horse girls, and then there are fish girls."
+4 - Senior,Decoration,Driftwood,1,0,1,,My aquarium is really starting to feel like a mini-ocean now!
+4 - Senior,Decoration,Purple Sea Fan Coral,2,2,1,,I love how vibrant coral is. Nature is neat!
+4 - Senior,Decoration,Red Sea Fan Coral,2,2,1,,I love how vibrant coral is. Nature is neat!
+4 - Senior,Decoration,Coral Reefs,5,5,1,,"When I snorkeled the Great Barrier Reef, I realized | how small we are in comparison to the sea."
 3 - Adult,Environment,Fish Tank,,,,,
 3 - Adult,Environment,Background,,,,,
 3 - Adult,Miscellaneous,Cutscene,,,,,
-4 - Senior,Fish,Sunfish,,,1,,
-4 - Senior,Fish,Whale Shark,,,1,,
-4 - Senior,Fish,Sea Turtles,,,1,,
-4 - Senior,Fish,School of Fish,,,1,,
-4 - Senior,Fish,Manta Ray,,,1,,
-4 - Senior,Decoration,Coral Reefs,,,1,,
-4 - Senior,Decoration,Rocky Mountain,,,1,,
-4 - Senior,Decoration,,,,1,,
-4 - Senior,Decoration,,,,1,,
-4 - Senior,Decoration,,,,1,,
-4 - Senior,Decoration,,,,1,,
+4 - Senior,Decoration,Rocky Mountain,5,0,1,,"I've always loved visiting aquariums and admiring the tanks. Now, I get to take care my own. "
+4 - Senior,Decoration,Clauvularia Coral,3,2,1,,"Coral are animals, not plants. They're invertebrates."
+4 - Senior,Decoration,Sea Anemone,3,3,1,,I wish I could be a fish and swim through anemones. They're the flowers of the ocean.
 4 - Senior,Environment,Aquarium Tank,,,,,
 4 - Senior,Environment,Background / FG (?),,,,,
 4 - Senior,Miscellaneous,Cutscene,,,,,
@@ -61,4 +97,3 @@ Miscellaneous,UI,Item Description,,,,,
 Miscellaneous,UI,Complete Button,,,,,
 Miscellaneous,UI,Quest Objective,,,,,
 Miscellaneous,UI,Quest Progress Bars,,,,,
-,,,,,1,,
