@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1076
+--- !u!114 &-8343579977997747923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Amb_SecondAquarium
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/Amb_SecondAquarium
+  Guid:
+    Data1: 2003326295
+    Data2: 1125717987
+    Data3: -524280172
+    Data4: 1635223989
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15469
 --- !u!114 &-8299053089965539622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +81,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 484
+--- !u!114 &-7677017699605683502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/WaterMovement
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/WaterMovement
+  Guid:
+    Data1: 1296217214
+    Data2: 1254160175
+    Data3: -840877654
+    Data4: -2022262600
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2180711669951473010}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7800
 --- !u!114 &-7621616114282045173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +162,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 941
+  Length: 1111
 --- !u!114 &-6961052711465360224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +241,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 313
+--- !u!114 &-4059131799032830307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Amb_ChildBedroom
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/Amb_ChildBedroom
+  Guid:
+    Data1: -1813219962
+    Data2: 1163512224
+    Data3: -1377432156
+    Data4: -1024799772
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15469
 --- !u!114 &-3948862464368543783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +295,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 640
+--- !u!114 &-3649869765754534054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/VolumeClick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/VolumeClick
+  Guid:
+    Data1: -1939365509
+    Data2: 1237830664
+    Data3: 1371892613
+    Data4: -13664538
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40
 --- !u!114 &-3552742519062770250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,7 +337,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Bank.bank
   Name: Desktop/Bank
   StudioPath: bank:/Bank
-  lastModified: 638597109395182081
+  lastModified: 638597970882699391
   FileSizes: []
   Exists: 1
 --- !u!114 &-3222568960378258090
@@ -350,12 +459,22 @@ MonoBehaviour:
   - {fileID: 899521939718191330}
   - {fileID: 382211991350427557}
   - {fileID: -5291310123716576100}
+  - {fileID: 9207705963458030825}
+  - {fileID: -7677017699605683502}
+  - {fileID: 5769629757169151917}
+  - {fileID: 6261346194873238998}
+  - {fileID: 5395875847241516301}
+  - {fileID: -8343579977997747923}
+  - {fileID: 9016062492508878326}
+  - {fileID: -4059131799032830307}
+  - {fileID: 4068431736703608679}
+  - {fileID: -3649869765754534054}
   EditorParameters: []
   MasterBanks:
   - {fileID: 701600441131598279}
   StringsBanks:
   - {fileID: 6658831675907334815}
-  cacheTime: 638597109395260263
+  cacheTime: 638597970883049528
   cacheVersion: 131619
 --- !u!114 &382211991350427557
 MonoBehaviour:
@@ -427,7 +546,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638597109395250503
+  lastModified: 638597970883029651
   FileSizes: []
   Exists: 1
 --- !u!114 &899521939718191330
@@ -457,6 +576,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 282
+--- !u!114 &986373028528509721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FishMove/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 4044207260
+    data2: 3674862866
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Small
+  - Med
+  - Big
+  Exists: 1
 --- !u!114 &1261219357075272278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +629,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1098
+  Length: 1278
 --- !u!114 &1436140147666454659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,6 +658,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2180711669951473010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WaterMovement/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4083676095
+    data2: 4185619005
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2229691550652472276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,6 +736,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 628
+--- !u!114 &4068431736703608679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Amb_FirstAquarium
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/Amb_FirstAquarium
+  Guid:
+    Data1: -543404103
+    Data2: 1117119858
+    Data3: 690013334
+    Data4: -323215596
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15469
 --- !u!114 &4759911874415640400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,6 +790,88 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2893
+--- !u!114 &5395875847241516301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ObjectiveMenu_AllComplete
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ObjectiveMenu_AllComplete
+  Guid:
+    Data1: -912030381
+    Data2: 1246276669
+    Data3: 1494288299
+    Data4: 1671179298
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1512
+--- !u!114 &5769629757169151917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Water_Enter
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Water_Enter
+  Guid:
+    Data1: -1982012448
+    Data2: 1139749599
+    Data3: -2062956364
+    Data4: -2121473754
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1352
+--- !u!114 &6261346194873238998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Fish/FishMove
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Fish/FishMove
+  Guid:
+    Data1: -1324959075
+    Data2: 1245017626
+    Data3: -1490121808
+    Data4: -2040651408
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 986373028528509721}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6468198117197678709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,10 +914,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638597109395260263
+  lastModified: 638597970883049528
   FileSizes:
   - Name: 
-    Value: 1894
+    Value: 2416
   Exists: 1
 --- !u!114 &7275160309385022223
 MonoBehaviour:
@@ -778,6 +1057,33 @@ MonoBehaviour:
   - Rock
   - Wood
   Exists: 1
+--- !u!114 &9016062492508878326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Amb_TeenBedroom
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/Amb_TeenBedroom
+  Guid:
+    Data1: 1863518818
+    Data2: 1196416858
+    Data3: -1757553987
+    Data4: -1832960591
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15469
 --- !u!114 &9170830404857705041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -805,3 +1111,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 270
+--- !u!114 &9207705963458030825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Water_Exit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Water_Exit
+  Guid:
+    Data1: -23846561
+    Data2: 1103152879
+    Data3: 1163894688
+    Data4: 369344088
+  Banks:
+  - {fileID: -3552742519062770250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 956

@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour {
 
     [SerializeField] int level = 1;
 
-    private bool first = false;
+    private bool first = true;
 
     void Start() {
         // level = GameManager.Instance.currentStage;
@@ -35,7 +35,14 @@ public class Inventory : MonoBehaviour {
     }
 
     public void PopulateDecos() {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Tab_Dec");
+        if (first)
+        {
+            first = false;
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Tab_Dec");
+        }
         m_Tabs[0].interactable = true;
         m_Tabs[1].interactable = false;
         ClearScrollContentItems();

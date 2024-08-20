@@ -11,6 +11,8 @@ public class GameManager : Singleton<GameManager>
 
     private ObjectiveManager objectiveManager;
 
+    private bool objectivesComplete = false;
+
     void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -40,8 +42,17 @@ public class GameManager : Singleton<GameManager>
         {
             if (objectiveManager.AllRequirementsComplete())
             {
-                // I don't care if this is inefficient lol
-                UIManager.Instance.completeButton.gameObject.SetActive(true);
+                if (!objectivesComplete)
+                {
+                    // I don't care if this is inefficient lol
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_AllComplete");
+                    objectivesComplete = true;
+                    UIManager.Instance.completeButton.gameObject.SetActive(true);
+                }
+            }
+            else
+            {
+                objectivesComplete = false;
             }
         }
     }

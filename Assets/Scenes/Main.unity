@@ -1476,7 +1476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &430813423
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2134,6 +2134,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c9b0e8d2103fc41a8637d88e15c577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &579894937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579894939}
+  - component: {fileID: 579894938}
+  m_Layer: 0
+  m_Name: Ambience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &579894938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579894937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1813219962
+      Data2: 1163512224
+      Data3: -1377432156
+      Data4: -1024799772
+    Path: event:/SFX/Ambience/Amb_ChildBedroom
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &579894939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579894937}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586649085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,6 +4193,7 @@ GameObject:
   - component: {fileID: 1404035371}
   - component: {fileID: 1404035373}
   - component: {fileID: 1404035372}
+  - component: {fileID: 1404035374}
   m_Layer: 5
   m_Name: Complete Button
   m_TagString: Untagged
@@ -4220,6 +4284,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1404035374}
+        m_TargetAssemblyTypeName: SFXItems, Assembly-CSharp
+        m_MethodName: SFXPlayLevelComplete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1404035373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4247,6 +4323,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &1404035374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404035368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f166485c1c2693145867051eb6ee84be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1433231439
 GameObject:
   m_ObjectHideFlags: 0
@@ -15656,6 +15744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5006538074142316071, guid: 9d348d220d2916a448c2ffc0ef2ec594, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8599539250935562321, guid: 9d348d220d2916a448c2ffc0ef2ec594, type: 3}
       propertyPath: m_LocalPosition.x
       value: 172.24594
@@ -15705,6 +15797,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 579894939}
   - {fileID: 561393468}
   - {fileID: 222803748}
   - {fileID: 1829354693}

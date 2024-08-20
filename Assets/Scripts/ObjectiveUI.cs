@@ -23,6 +23,9 @@ public class ObjectiveUI : MonoBehaviour
     public GameObject m_objectiveItemBottomCheckboxChecked;
     public TMP_Text m_objectiveItemBottomText;
 
+    private bool topChecked = false;
+    private bool bottomChecked = false;
+
     public void UpdateUI()
     {
         var spaceProgress = m_objectiveManager.CalculateSpaceLevel();
@@ -36,6 +39,28 @@ public class ObjectiveUI : MonoBehaviour
 
         bool shouldCheckTop = currentFishes == m_objectiveManager.Objective.FishCount;
         bool shouldCheckBottom = currentDecoration == m_objectiveManager.Objective.DecorationCount;
+
+        if (shouldCheckTop)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Complete");
+            topChecked = true;
+        }
+        else if (topChecked)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Incomplete");
+            topChecked = false;
+        }
+
+        if (shouldCheckBottom)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Complete");
+            bottomChecked = true;
+        }
+        else if (bottomChecked)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Incomplete");
+            bottomChecked = false;
+        }
 
         UpdateObjectiveItem(m_objectiveItemTopCheckboxEmpty, m_objectiveItemTopCheckboxChecked, shouldCheckTop, m_objectiveItemTopText, m_objectiveManager.Objective.FishObjectiveText);
         UpdateObjectiveItem(m_objectiveItemBottomCheckboxEmpty, m_objectiveItemBottomCheckboxChecked, shouldCheckBottom, m_objectiveItemBottomText, m_objectiveManager.Objective.DecorationObjectiveText);

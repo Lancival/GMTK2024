@@ -22,6 +22,7 @@ public class StatsDatabase : MonoBehaviour {
         public string diversity;
         public string size;
         public string flavorText;
+        public string decoType;
     }
     
     private static List<StatItem> m_items;
@@ -41,7 +42,7 @@ public class StatsDatabase : MonoBehaviour {
 
         for (int i = 1; i < dataLines.Length; i++) {
             var data = Regex.Split(dataLines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
-            Assert.AreEqual(data.Length, 8);
+            Assert.AreEqual(data.Length, 9);
             var statItem = new StatItem {
                 assetType = data[1],
                 name = data[2],
@@ -49,7 +50,8 @@ public class StatsDatabase : MonoBehaviour {
                 waterQuality = data[4],
                 diversity = data[5],
                 size = data[6],
-                flavorText = data[7]
+                flavorText = data[7],
+                decoType = data[8]
             };
 
             switch (data[0]) {

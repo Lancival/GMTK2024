@@ -7,5 +7,6 @@ public class StartButton : MonoBehaviour
 {
     public void LoadScene() {
         SceneManager.LoadScene("Main");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/GenUI_Select");
     }
 }

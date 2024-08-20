@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99787a7f725664647aa4ff514e1726cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_objectiveManager: {fileID: 0}
   m_spaceProgressMask: {fileID: 872872305017239723}
   m_spaceProgressRect: {fileID: 6486847565815806523}
   m_waterQualityProgressMask: {fileID: 677037237838612005}

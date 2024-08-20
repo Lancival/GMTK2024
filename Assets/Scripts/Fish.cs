@@ -10,10 +10,11 @@ public class Fish : MonoBehaviour
 
     Rigidbody2D m_RigidBody2D;
     Vector2 m_Direction;
+    SFXItems AudioPlayer;
 
-#endregion
+    #endregion
 
-#region parameters
+    #region parameters
     [field: SerializeField] public string Name { get; private set; }
     [field: SerializeField] public int ID { get; private set; }
     [field: SerializeField] public Sprite Sprite { get; private set; }
@@ -58,6 +59,7 @@ public class Fish : MonoBehaviour
     void Start()
     {
         m_RigidBody2D = GetComponent<Rigidbody2D>();
+        AudioPlayer = GetComponent<SFXItems>();
 
         // Assign initial direction where the fish will swim
         m_Direction = PickDirection();
@@ -124,7 +126,8 @@ public class Fish : MonoBehaviour
         {
             var sprite_renderer = GetComponent<SpriteRenderer>();
             sprite_renderer.flipX = !sprite_renderer.flipX;
-            m_Direction *= -1; 
+            m_Direction *= -1;
+            AudioPlayer.SFXPlayFishMove();
         }
     }
 
@@ -165,6 +168,7 @@ public class Fish : MonoBehaviour
             var sprite_renderer = GetComponent<SpriteRenderer>();
             m_RigidBody2D.velocity = new Vector2(0f,0f);
             m_Direction *= -1;
+            AudioPlayer.SFXPlayFishMove();
             sprite_renderer.flipX = !sprite_renderer.flipX;
         }
     }

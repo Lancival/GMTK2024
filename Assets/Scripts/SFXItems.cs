@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class SFXItems : MonoBehaviour
@@ -13,7 +14,33 @@ public class SFXItems : MonoBehaviour
     //0 = organic, 1 = rock, 2 = wood
     private int decType = 0;
 
-    void Awake()
+    private void Awake()
+    {
+        GetFishSize();
+    }
+
+    private void GetDecMaterial()
+    {
+        dec = GetComponent<Decoration>();
+        string decMat = dec.Material;
+        isFish = false;
+        if (decType == 0)
+        {
+            UnityEngine.Debug.Log(decMat);
+            decType = 0;
+        }
+        else if (decMat == "Wood")
+        {
+            decType = 2;
+        }
+        else if (decMat == "Rock")
+        {
+            decType = 1;
+        }
+
+    }
+
+    private void GetFishSize()
     {
         fish = GetComponent<Fish>();
         if (fish != null)
@@ -24,7 +51,7 @@ public class SFXItems : MonoBehaviour
             {
                 fishSize = 0;
             }
-            else if (fish.Space <= 5)
+            else if (fish.Space < 5)
             {
                 fishSize = 1;
             }
@@ -32,36 +59,21 @@ public class SFXItems : MonoBehaviour
             {
                 fishSize = 2;
             }
-
-        }
-        else
-        {
-            dec = GetComponent<Decoration>();
-            isFish = false;
-
-            if (dec.Type == DecoType.Organic)
-            {
-                decType = 0;
-            }
-            else if (dec.Type == DecoType.Wood)
-            {
-                decType = 2;
-            }
-            else
-            {
-                decType = 1;
-            }
         }
     }
 
     public void SFXPlaySelect()
     {
+
         if (isFish)
         {
+            GetFishSize();
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Fish_Select", "Size", fishSize);
         }
         else
         {
+            GetDecMaterial();
+            
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Dec_Select", "Material", decType);
         }
     }
@@ -70,10 +82,12 @@ public class SFXItems : MonoBehaviour
     {
         if (isFish)
         {
+            GetFishSize();
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Fish_Place", "Size", fishSize);
         }
         else
         {
+            GetDecMaterial();
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Dec_Place", "Material", decType);
         }
     }
@@ -82,12 +96,25 @@ public class SFXItems : MonoBehaviour
     {
         if (isFish)
         {
+            GetFishSize();
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Fish_Return", "Size", fishSize);
         }
         else
         {
+            GetDecMaterial();
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Dec_Return", "Material", decType);
         }
+    }
+
+    public void SFXPlayFishMove()
+    {
+        GetFishSize();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Fish/FishMove", "Size", fishSize);
+    }
+
+    public void SFXPlayLevelComplete()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/TankComplete");
     }
 
 
