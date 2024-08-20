@@ -1227,9 +1227,30 @@ retry:
             }
         }
 
+        public static void PlayOneShot(string path, string paramName, float paramValue, Vector3 position = new Vector3())
+        {
+            try
+            {
+                PlayOneShot(PathToGUID(path), paramName, paramValue, position);
+            }
+            catch (EventNotFoundException)
+            {
+                RuntimeUtils.DebugLogWarning("[FMOD] Event not found: " + path);
+            }
+        }
+
         public static void PlayOneShot(FMOD.GUID guid, Vector3 position = new Vector3())
         {
             var instance = CreateInstance(guid);
+            instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
+            instance.start();
+            instance.release();
+        }
+
+        public static void PlayOneShot(FMOD.GUID guid, string paramName, float paramValue, Vector3 position = new Vector3())
+        {
+            var instance = CreateInstance(guid);
+            instance.setParameterByName(paramName, paramValue);
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
             instance.start();
             instance.release();

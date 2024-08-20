@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2151550612949105879}
   - component: {fileID: 8059055544722230734}
   - component: {fileID: 8892421108097261084}
+  - component: {fileID: 8410120902665859185}
   m_Layer: 0
   m_Name: Draggable
   m_TagString: Untagged
@@ -99,6 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragging: 1
+  tankLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &8892421108097261084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +148,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8410120902665859185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954100073953668603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f166485c1c2693145867051eb6ee84be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

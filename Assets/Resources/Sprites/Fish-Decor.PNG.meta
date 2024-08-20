@@ -1,0 +1,990 @@
+fileFormatVersion: 2
+guid: 950c87fec1b484b37a1b31cd3bbd8afc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Purple Sea Snail
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 7343
+        width: 265
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba43972426e944d2b8e4983773e9890d
+      internalID: 102989901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pompom Crab
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 7236
+        width: 529
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ab47d95065b4eab832412c15f08916
+      internalID: -115870050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Shrimp
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 7356
+        width: 241
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd602dcfad07248e98deafcce8a7e517
+      internalID: -238420347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clownfish
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 7308
+        width: 460
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b1c20fd8f014a87ae4f1d434cb230e
+      internalID: -239878127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White Clownfish
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 7295
+        width: 481
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617d4a256559d4611b8c9951a02cb8ea
+      internalID: 1821346767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Shrimp
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 7299
+        width: 355
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c276e89d27cd04b0dbffbd768aa42f10
+      internalID: 1237188327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby Jellyfish
+      rect:
+        serializedVersion: 2
+        x: 3616
+        y: 7379
+        width: 246
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c788f290d224f3d8b04f51dfe8ad5d
+      internalID: -1078167157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sea Turtles
+      rect:
+        serializedVersion: 2
+        x: 3979
+        y: 6830
+        width: 842
+        height: 784
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2914231cb24442783b39eed03b3207
+      internalID: -890306455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sunfish
+      rect:
+        serializedVersion: 2
+        x: 4893
+        y: 6488
+        width: 561
+        height: 1111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4eeb9396bd864144a04cf319dc6cae0
+      internalID: 1710267080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sea Snail
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 7342
+        width: 334
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ab865a6e0d24deeaf24605ebbbaacd
+      internalID: -1522692152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange Sea Snail
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 7366
+        width: 214
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1585e31134be4894b96883b896d9c1e
+      internalID: 294129969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sea Butterfly
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 7383
+        width: 186
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a9622f8fae0437781cdda2a13581e9
+      internalID: -456815422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaweed Patch
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 6268
+        width: 634
+        height: 989
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cd59c70e9df4b66a89d080dbf160d9
+      internalID: 1671042738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dumbo Octopus
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 6702
+        width: 505
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a49b2b2e2f7f44ee850709b177d4145
+      internalID: 1558435847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Tang
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 6762
+        width: 738
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45dc4338545d4efdbea6161454b777d
+      internalID: -1553183670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hawkfish
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 6825
+        width: 732
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfb6c75879484f61871bf6d43bf64ac
+      internalID: -274827348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moon Jellyfish
+      rect:
+        serializedVersion: 2
+        x: 3582
+        y: 7011
+        width: 299
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df41cb43f0984b8f977586c3cdd377d
+      internalID: -73518585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaweed
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 6300
+        width: 406
+        height: 551
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78a4eb60a5ff4ecfb9490101e3b5007
+      internalID: -1330775159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clauvularia Coral
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 6223
+        width: 521
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a8de7029bcf4aa481221734f311ca9
+      internalID: 2114066679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sea Anemone
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 5982
+        width: 647
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1add31f68aa994f1ebe43112115be53b
+      internalID: -1489427230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocky Cave
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 5967
+        width: 996
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b106df364ca294f88bd6d1f73f9db22d
+      internalID: -1035845304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Starfish
+      rect:
+        serializedVersion: 2
+        x: 4179
+        y: 6214
+        width: 266
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442d642dc15314eae8cfd7c07ea9a8a2
+      internalID: 641339625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angelfish
+      rect:
+        serializedVersion: 2
+        x: 4577
+        y: 5950
+        width: 499
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b5a947294d144e2819a640aed11d0b
+      internalID: 1638777699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capnella Coral
+      rect:
+        serializedVersion: 2
+        x: 5213
+        y: 5780
+        width: 623
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8502813e433be4820b091952af0a8a62
+      internalID: -1617708154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 5711
+        width: 562
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903c2c2d6cede4554a732534b8a99e5e
+      internalID: -484001508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 5735
+        width: 298
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38eb202a4df564735a1a966a070f0e42
+      internalID: -980540486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Sea Fan Coral
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 5414
+        width: 684
+        height: 760
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e5f8a342a5a4c8192c18d6a21ceafe
+      internalID: -72090232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange Starfish
+      rect:
+        serializedVersion: 2
+        x: 4183
+        y: 5918
+        width: 247
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd03c82459f24063ab04150e439e65e
+      internalID: -28035779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manta Ray
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 4439
+        width: 1226
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd38048c4bf9f435391eddd61dac6364
+      internalID: -816608861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Sea Fan Coral
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 5262
+        width: 584
+        height: 653
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da04a60e0ca0a42f0a8c076cd87a7533
+      internalID: 1400523740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whale Shark
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3752
+        width: 3019
+        height: 1976
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7fe16443362434db030a43456f218a
+      internalID: -1668769806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School of Fish
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 4293
+        width: 1247
+        height: 829
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7debd95d6ee49cc95eb4737e78c696
+      internalID: 44773196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocky Mountains
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2769
+        width: 2274
+        height: 1267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d304e0fd9c564efab159f7504c32ab6
+      internalID: 787097010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Mossy Log
+      rect:
+        serializedVersion: 2
+        x: 4018
+        y: 2850
+        width: 1878
+        height: 751
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f47281b0b3fa45158fb89377fec69c5
+      internalID: 1991858208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral Reefs
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1462
+        width: 4066
+        height: 1211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c256c4327d5423891b5fb8cbc2c5b8
+      internalID: -190969404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Driftwood
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 203
+        width: 1495
+        height: 940
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5dbb807bb844dc48fe0ad11825020b
+      internalID: 2124260487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Mossy Rock
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 92
+        width: 1140
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e9f5d3dfbf048c78703248545c4610
+      internalID: 2106367424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capnella Corals
+      rect:
+        serializedVersion: 2
+        x: 3105
+        y: 73
+        width: 1067
+        height: 1132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafea25479ff348eebd7e08ceebb63a2
+      internalID: 1038601395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink Sea Fan Coral
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 32
+        width: 1092
+        height: 1266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409600a436a304fc4ba013a7bafd8ffb
+      internalID: 278063096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Angelfish: 1638777699
+      Baby Jellyfish: -1078167157
+      Blue Sea Snail: -1522692152
+      Blue Tang: -1553183670
+      Capnella Coral: -1617708154
+      Capnella Corals: 1038601395
+      Cherry Shrimp: -238420347
+      Clauvularia Coral: 2114066679
+      Clownfish: -239878127
+      Coral Reefs: -190969404
+      Driftwood: 2124260487
+      Dumbo Octopus: 1558435847
+      Fish-Decor_11: 107554705
+      Fish-Decor_27: 1344852636
+      Fish-Decor_34: 921453362
+      Fish-Decor_38: 1760405464
+      Fish-Decor_6: -435304787
+      Green Starfish: 641339625
+      Hawkfish: -274827348
+      Large Mossy Log: 1991858208
+      Large Mossy Rock: 2106367424
+      Manta Ray: -816608861
+      Mantis Shrimp: 1237188327
+      Moon Jellyfish: -73518585
+      Orange Sea Snail: 294129969
+      Orange Starfish: -28035779
+      Pink Sea Fan Coral: 278063096
+      Pompom Crab: -115870050
+      Purple Sea Fan Coral: 1400523740
+      Purple Sea Snail: 102989901
+      Red Sea Fan Coral: -72090232
+      Rock: -980540486
+      Rocks: -484001508
+      Rocky Cave: -1035845304
+      Rocky Mountains: 787097010
+      School of Fish: 44773196
+      Sea Anemone: -1489427230
+      Sea Butterfly: -456815422
+      Sea Turtles: -890306455
+      Seaweed: -1330775159
+      Seaweed Patch: 1671042738
+      Sunfish: 1710267080
+      Whale Shark: -1668769806
+      White Clownfish: 1821346767
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
