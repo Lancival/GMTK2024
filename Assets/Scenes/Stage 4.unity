@@ -1663,10 +1663,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Objective:
-    FishCount: 0
-    FishObjectiveText: 
-    DecorationCount: 0
-    DecorationObjectiveText: 
+    FishCount: 10
+    FishObjectiveText: Have at least 10 fish
+    DecorationCount: 10
+    DecorationObjectiveText: Have at least 10 decorations
   <SpaceRange>k__BackingField:
     MinOk: 1
     MinGood: 2
@@ -4062,7 +4062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1313085638
 RectTransform:
   m_ObjectHideFlags: 0
