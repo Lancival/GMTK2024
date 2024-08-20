@@ -36,11 +36,13 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        if (objectiveManager.AllRequirementsComplete())
+        if (objectiveManager != null)
         {
-            // I don't care if this is inefficient lol
-            UIManager.Instance.completeButton.gameObject.SetActive(true);
-
+            if (objectiveManager.AllRequirementsComplete())
+            {
+                // I don't care if this is inefficient lol
+                UIManager.Instance.completeButton.gameObject.SetActive(true);
+            }
         }
     }
 }
