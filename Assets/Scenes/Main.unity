@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Tabs:
   - {fileID: 1785711285}
   - {fileID: 1517785751}
+  level: 1
 --- !u!1 &134500575
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,8 +760,10 @@ MonoBehaviour:
     order: 1
   - name: Stage 2
     order: 2
-  - name: 
+  - name: Stage 3
     order: 3
+  - name: Stage 4
+    order: 4
 --- !u!114 &222803751
 MonoBehaviour:
   m_ObjectHideFlags: 0

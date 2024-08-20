@@ -7,8 +7,9 @@ public class MainButtons : MonoBehaviour
 {
     public ObjectiveUI m_ObjectiveUI;
 
-    private void Start()
-    {
+    private void Start() {
+        // lol
+        m_ObjectiveUI = GameObject.Find("ObjectivePanel").GetComponent<ObjectiveUI>();
         m_ObjectiveUI.GetComponent<CanvasGroup>().alpha = 0f;
     }
 

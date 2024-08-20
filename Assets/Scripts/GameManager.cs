@@ -19,7 +19,7 @@ public class GameManager : Singleton<GameManager>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         objectiveManager = (ObjectiveManager)FindFirstObjectByType(typeof(ObjectiveManager));
-        UIManager.Instance.completeButton.gameObject.SetActive(false);
+        // UIManager.Instance.completeButton.gameObject.SetActive(false);
         Debug.Log("OnSceneLoaded: " + scene.name);
         Debug.Log(mode);
         foreach (var stage in stages)

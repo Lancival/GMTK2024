@@ -10,12 +10,12 @@ public class Inventory : MonoBehaviour {
     [SerializeField] private GameObject m_ItemPrefab;
     [SerializeField] private List<Button> m_Tabs;
 
-    int level;
+    [SerializeField] int level = 1;
 
     private bool first = false;
 
     void Start() {
-        level = GameManager.Instance.currentStage;
+        // level = GameManager.Instance.currentStage;
         PopulateFishes();
     }
 
