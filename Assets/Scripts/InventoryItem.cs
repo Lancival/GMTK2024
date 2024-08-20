@@ -12,6 +12,14 @@ public class InventoryItem : MonoBehaviour {
     }
 
     void OnHoverEnter() {
+        if (statItem.assetType == "Fish")
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Inventory_Fish_Hover");
+        }
+        else if (statItem.assetType == "Decoration")
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Inventory_Dec_Hover");
+        }
         UIManager.Instance.ToggleInfoPanel(true);
         UIManager.Instance.UpdateInfoPanel(statItem);
     }
