@@ -1500,10 +1500,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Objective:
-    FishCount: 0
-    FishObjectiveText: 
-    DecorationCount: 0
-    DecorationObjectiveText: 
+    FishCount: 5
+    FishObjectiveText: Have at least 5 fish.
+    DecorationCount: 8
+    DecorationObjectiveText: Have at least 8 decorations.
   <SpaceRange>k__BackingField:
     MinOk: 1
     MinGood: 2
@@ -1790,7 +1790,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 452747738026136038, guid: d6bb82baf90464a4f9fcda549935d121, type: 3}
       propertyPath: <Capacity>k__BackingField
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1591528154726575457, guid: d6bb82baf90464a4f9fcda549935d121, type: 3}
       propertyPath: m_Name
@@ -2981,7 +2981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &931553644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15836,6 +15836,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1829354693}
     m_Modifications:
+    - target: {fileID: 238621104793033118, guid: 007b1ccaaafa9584a96f780ca47d5f24, type: 3}
+      propertyPath: m_text
+      value: Have at least 8 decorations.
+      objectReference: {fileID: 0}
     - target: {fileID: 1489410177055145054, guid: 007b1ccaaafa9584a96f780ca47d5f24, type: 3}
       propertyPath: m_Alpha
       value: 0
@@ -15955,6 +15959,10 @@ PrefabInstance:
     - target: {fileID: 5968700179501738052, guid: 007b1ccaaafa9584a96f780ca47d5f24, type: 3}
       propertyPath: m_Name
       value: ObjectivePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822028716573519168, guid: 007b1ccaaafa9584a96f780ca47d5f24, type: 3}
+      propertyPath: m_text
+      value: Have at least 5 fish.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

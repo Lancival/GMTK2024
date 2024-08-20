@@ -126,7 +126,7 @@ MonoBehaviour:
     waterQuality: 
     diversity: 
     size: 
-    notes: 
+    flavorText: 
 --- !u!114 &5285458963444652106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -247035244, guid: 17bfecddd2b414367a2839e3c227923d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

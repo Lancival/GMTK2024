@@ -383,7 +383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dumbo Octopus
+      name: Dumbo Octopi
       rect:
         serializedVersion: 2
         x: 1190
@@ -950,7 +950,7 @@ TextureImporter:
       Clownfish: 403787567
       Coral Reefs: -1270178087
       Driftwood: 1508878238
-      Dumbo Octopus: -1919368091
+      Dumbo Octopi: -1919368091
       FishDecor_11: -1403470168
       FishDecor_26: -912928840
       FishDecor_34: 642441318

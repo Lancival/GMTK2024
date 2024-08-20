@@ -1735,7 +1735,7 @@ MonoBehaviour:
     FishCount: 1
     FishObjectiveText: Have one fish in the tank
     DecorationCount: 1
-    DecorationObjectiveText: Have at least one decoration
+    DecorationObjectiveText: Have at least one decoration.
   <SpaceRange>k__BackingField:
     MinOk: 1
     MinGood: 2
