@@ -28,6 +28,8 @@ public class UIManager : Singleton<UIManager> {
     public void ToggleInventoryPanel(bool enable) {
         DOTween.Kill(inventoryPanel.transform);
         inventoryPanel.transform.DOMove(enable ? inventoryOpenPos.position : inventoryClosePos.position, tp.PanelSlideDur);
+        string invSFX = enable ? "event:/SFX/Inventory_Open" : "event:/SFX/Inventory_Close";
+        FMODUnity.RuntimeManager.PlayOneShot(invSFX);
     }
 
     public void ToggleInfoPanel(bool enable) {
@@ -41,8 +43,10 @@ public class UIManager : Singleton<UIManager> {
         DOTween.Kill(objectivesPanel);
         if (objectivesPanel.alpha == 0) {
             objectivesPanel.DOFade(1.0f, tp.PanelFadeDur);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Open");
         } else {
             objectivesPanel.DOFade(0.0f, tp.PanelFadeDur);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ObjectiveMenu_Close");
         }
     }
 }

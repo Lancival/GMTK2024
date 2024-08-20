@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,22 @@ public class Inventory : MonoBehaviour {
 
     int level;
 
+    private bool first = false;
+
     void Start() {
         level = GameManager.Instance.currentStage;
         PopulateFishes();
     }
 
     public void PopulateFishes() {
+        if (first)
+        {
+            first = false;
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Tab_Fish");
+        }
         m_Tabs[0].interactable = false;
         m_Tabs[1].interactable = true;
         ClearScrollContentItems();
@@ -24,6 +35,7 @@ public class Inventory : MonoBehaviour {
     }
 
     public void PopulateDecos() {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Tab_Dec");
         m_Tabs[0].interactable = true;
         m_Tabs[1].interactable = false;
         ClearScrollContentItems();
