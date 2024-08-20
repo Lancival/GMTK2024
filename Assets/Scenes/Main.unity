@@ -361,11 +361,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 531996329}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 180}
-  m_SizeDelta: {x: 150, y: 1520}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -0.00012207031, y: -114.11}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &142195033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1256606839, guid: 99fe4d8ece8173a46baa7e8455560c25, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -601,8 +601,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 222803748}
-  - component: {fileID: 222803750}
   - component: {fileID: 222803749}
+  - component: {fileID: 222803750}
   - component: {fileID: 222803751}
   m_Layer: 0
   m_Name: GameManager
@@ -2966,7 +2966,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1076003816}
-  - component: {fileID: 1076003817}
   m_Layer: 5
   m_Name: InfoPanel
   m_TagString: Untagged
@@ -2994,24 +2993,6 @@ RectTransform:
   m_AnchoredPosition: {x: 410.00024, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0}
---- !u!114 &1076003817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076003815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce45989a9a122d43a9f139e06c21c38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 1753904730}
-  image: {fileID: 142195033}
-  typeValueText: {fileID: 1953518767}
-  spaceValueText: {fileID: 1378854681}
-  cleanlinessValueText: {fileID: 320132563}
-  flavorText: {fileID: 1363081473}
 --- !u!1 &1092713274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,7 +3317,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000061035156, y: 0}
-  m_SizeDelta: {x: 180, y: 0}
+  m_SizeDelta: {x: 150, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1191720291
 MonoBehaviour:
@@ -3950,7 +3931,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.8160377, b: 0.900444, a: 0.53333336}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.53333336}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

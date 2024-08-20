@@ -11,12 +11,22 @@ public class Inventory : MonoBehaviour {
 
     int level;
 
+    private bool first = true;
+
     void Start() {
         level = GameManager.Instance.currentStage;
         PopulateFishes();
     }
 
     public void PopulateFishes() {
+        if (first)
+        {
+            first = false;
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Tab_Fish");
+        }
         m_Tabs[0].interactable = false;
         m_Tabs[1].interactable = true;
         ClearScrollContentItems();
@@ -24,6 +34,7 @@ public class Inventory : MonoBehaviour {
     }
 
     public void PopulateDecos() {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Tab_Dec");
         m_Tabs[0].interactable = true;
         m_Tabs[1].interactable = false;
         ClearScrollContentItems();
@@ -45,7 +56,8 @@ public class Inventory : MonoBehaviour {
             item.GetComponent<Button>().image.sprite = contentItems[i].sprite;
 
             InventoryItem invItem = item.GetComponent<InventoryItem>();
-            invItem.statItem = contentItems[i];
+            invItem.SpawnName = contentItems[i].name;
+            invItem.AssetType = contentItems[i].assetType;
         }
     }
 }
