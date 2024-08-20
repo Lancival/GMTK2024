@@ -56,8 +56,7 @@ public class Inventory : MonoBehaviour {
             item.GetComponent<Button>().image.sprite = contentItems[i].sprite;
 
             InventoryItem invItem = item.GetComponent<InventoryItem>();
-            invItem.SpawnName = contentItems[i].name;
-            invItem.AssetType = contentItems[i].assetType;
+            invItem.statItem = contentItems[i];
         }
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 public class StatsDatabase : MonoBehaviour {
     [SerializeField] private TextAsset m_StatsDatabaseText;
@@ -20,7 +21,7 @@ public class StatsDatabase : MonoBehaviour {
         public string waterQuality;
         public string diversity;
         public string size;
-        public string notes;
+        public string flavorText;
     }
     
     private static List<StatItem> m_items;
@@ -39,7 +40,7 @@ public class StatsDatabase : MonoBehaviour {
         string[] dataLines = m_StatsDatabaseText.text.Split('\n');
 
         for (int i = 1; i < dataLines.Length; i++) {
-            var data = dataLines[i].Split(',');
+            var data = Regex.Split(dataLines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
             Assert.AreEqual(data.Length, 8);
             var statItem = new StatItem {
                 assetType = data[1],
@@ -48,7 +49,7 @@ public class StatsDatabase : MonoBehaviour {
                 waterQuality = data[4],
                 diversity = data[5],
                 size = data[6],
-                notes = data[7]
+                flavorText = data[7]
             };
 
             switch (data[0]) {

@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class DragAndDrop : MonoBehaviour {
   public bool dragging = true;
@@ -9,13 +8,7 @@ public class DragAndDrop : MonoBehaviour {
   
   private Camera cam;
 
-  private SFXItems AudioPlayer;
-
-  void Start()
-   {
-    cam = Camera.main;
-    AudioPlayer = GetComponent<SFXItems>();
-   }
+  void Start() => cam = Camera.main;
 
   void Update() {
     if (dragging) {
@@ -24,30 +17,39 @@ public class DragAndDrop : MonoBehaviour {
       transform.position = CalculateDropPosition(mousePos);
       if (mouse.leftButton.wasReleasedThisFrame) {
         dragging = false;
+
+        // Added to tank successfully
+        if (IsInTank(mousePos, out Tank tank) && tank.Add(gameObject)) 
+        {
+          return;
+        }
         
-        if (!IsInTank(mousePos)) 
-        {
-          AudioPlayer.SFXPlayReturn();
-          Destroy(gameObject);
-        }
-        else
-        {
-          AudioPlayer.SFXPlayPlace();
-        }
+        Destroy(gameObject);
       }
     }
   }
 
-  void OnMouseDown()
+  void OnMouseDown() 
   {
     dragging = true;
-    AudioPlayer.SFXPlaySelect();
-  }
-
-  bool IsInTank(Vector2 mousePosition)
+    Vector2 mousePos = Mouse.current.position.ReadValue();
+    if (IsInTank(mousePos, out Tank tank)) 
+    {
+      tank.Remove(gameObject);
+    }
+  } 
+  
+  bool IsInTank(Vector2 mousePosition, out Tank tank) 
   {
+    tank = null;
+    
     Ray ray = cam.ScreenPointToRay(mousePosition);
     RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 100, tankLayer);
+    if (hit.collider != null && hit.collider.TryGetComponent(out Tank t)) {
+      tank = t;
+      return true;
+    }
+    
     return hit.collider != null;
   }
 
