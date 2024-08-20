@@ -782,7 +782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock Mountain
+      name: Rocky Mountain
       rect:
         serializedVersion: 2
         x: 21
@@ -971,9 +971,9 @@ TextureImporter:
       Purple Sea Snail: 1778845807
       Red Sea Fan Coral: -685961910
       Rock: 423363336
-      Rock Mountain: -704508216
       Rocks: -1572535723
       Rocky Cave: -457710932
+      Rocky Mountain: -704508216
       School of Fish: -1025365969
       Sea Anemone: 788642672
       Sea Butterfly: 1776317832
