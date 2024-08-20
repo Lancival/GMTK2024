@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainButtons : MonoBehaviour
 {
-    public GameObject m_ObjectiveUI;
+    public ObjectiveUI m_ObjectiveUI;
 
     private void Start()
     {
@@ -14,5 +15,10 @@ public class MainButtons : MonoBehaviour
     public void ShowObjectiveUI()
     {
         m_ObjectiveUI.GetComponent<CanvasGroup>().alpha = 1f;
+    }
+
+    public void ToggleValueChanged()
+    {
+        m_ObjectiveUI.UpdateUI();
     }
 }
