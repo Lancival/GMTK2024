@@ -21,6 +21,7 @@ public class StatsDatabase : MonoBehaviour {
         public string diversity;
         public string size;
         public string notes;
+        public string flavorText;
     }
     
     private static List<StatItem> m_items;

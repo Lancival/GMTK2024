@@ -31,6 +31,8 @@ public class UIManager : MonoBehaviour {
     public void ToggleInventoryPanel(bool enable) {
         DOTween.Kill(inventoryPanel.transform);
         inventoryPanel.transform.DOMove(enable ? inventoryOpenPos.position : inventoryClosePos.position, tp.PanelSlideDur);
+        string invSFX = enable ? "event:/SFX/Inventory_Open" : "event:/SFX/Inventory_Close";
+        FMODUnity.RuntimeManager.PlayOneShot(invSFX);
     }
 
     public void ToggleInfoPanel() {

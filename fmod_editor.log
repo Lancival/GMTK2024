@@ -7,13 +7,1294 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000017B40AF95D8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001F873BFACB8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F90BACF358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Inventory_Open_01', format=5, channels=2, frequency=48000, lengthbytes=5280, lengthpcm=20055, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.159324.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F90BACF358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Inventory_Open_02', format=5, channels=2, frequency=48000, lengthbytes=5856, lengthpcm=22868, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.216181.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F90BACF358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_GenUI_Select', format=5, channels=2, frequency=48000, lengthbytes=1696, lengthpcm=3839, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.458729.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F90BACF358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Inventory_Open_03', format=5, channels=2, frequency=48000, lengthbytes=5824, lengthpcm=23235, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.159941.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Med_Place_04', format=5, channels=2, frequency=48000, lengthbytes=13664, lengthpcm=45866, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.222786.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Small_Place_05', format=5, channels=2, frequency=48000, lengthbytes=9728, lengthpcm=37512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.308763.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Small_Place_04', format=5, channels=2, frequency=48000, lengthbytes=9856, lengthpcm=36074, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.174547.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Med_Place_07', format=5, channels=2, frequency=48000, lengthbytes=13120, lengthpcm=46941, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.195795.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Small_Place_01', format=5, channels=2, frequency=48000, lengthbytes=9408, lengthpcm=35570, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165535.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Small_Place_07', format=5, channels=2, frequency=48000, lengthbytes=9376, lengthpcm=35570, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.189345.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Med_Place_06', format=5, channels=2, frequency=48000, lengthbytes=12992, lengthpcm=51349, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.192813.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Big_Place_01', format=5, channels=2, frequency=48000, lengthbytes=16704, lengthpcm=95004, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.222795.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Med_Place_05', format=5, channels=2, frequency=48000, lengthbytes=12576, lengthpcm=47494, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.308800.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Small_Place_03', format=5, channels=2, frequency=48000, lengthbytes=8992, lengthpcm=31795, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.300625.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Big_Place_02', format=5, channels=2, frequency=48000, lengthbytes=15296, lengthpcm=91897, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.402547.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Med_Place_02', format=5, channels=2, frequency=48000, lengthbytes=13696, lengthpcm=54008, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.305276.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Big_Place_07', format=5, channels=2, frequency=48000, lengthbytes=14048, lengthpcm=109166, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.259739.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Big_Place_04', format=5, channels=2, frequency=48000, lengthbytes=14304, lengthpcm=97448, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.229967.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Small_Place_06', format=5, channels=2, frequency=48000, lengthbytes=10080, lengthpcm=39006, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.194683.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Big_Place_03', format=5, channels=2, frequency=48000, lengthbytes=13632, lengthpcm=99298, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.402505.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Med_Place_01', format=5, channels=2, frequency=48000, lengthbytes=15712, lengthpcm=53839, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.186963.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Med_Place_03', format=5, channels=2, frequency=48000, lengthbytes=12320, lengthpcm=43907, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315047.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Big_Place_06', format=5, channels=2, frequency=48000, lengthbytes=15200, lengthpcm=99915, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.261247.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Big_Place_05', format=5, channels=2, frequency=48000, lengthbytes=15648, lengthpcm=95598, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.416605.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8374C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Fish_Small_Place_02', format=5, channels=2, frequency=48000, lengthbytes=8416, lengthpcm=35570, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301820.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8372B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_DecTab_02', format=5, channels=2, frequency=48000, lengthbytes=5888, lengthpcm=23356, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.226739.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8372B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_DecTab_01', format=5, channels=2, frequency=48000, lengthbytes=6016, lengthpcm=25197, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.226739.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E8372B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_DecTab_03', format=5, channels=2, frequency=48000, lengthbytes=7744, lengthpcm=30149, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.232424.
+[LOG] SoundI::release                          :  (000001F8E55D1478)
+[LOG] SoundI::release                          :     SFX_GenUI_Select (000001F8E6F31088)
+[LOG] SoundI::release                          :  (000001F8E55D0788)
+[LOG] SoundI::release                          :     SFX_Inventory_Open_01 (000001F8E6F318A8)
+[LOG] SoundI::release                          :  (000001F8E55D3868)
+[LOG] SoundI::release                          :     SFX_Inventory_Open_02 (000001F8E6F31A48)
+[LOG] SoundI::release                          :  (000001F8E55CF368)
+[LOG] SoundI::release                          :     SFX_Inventory_Open_03 (000001F8E5B45DF8)
+[LOG] SoundI::release                          :  (000001F8E642B898)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Select_01 (000001F83EE661A8)
+[LOG] SoundI::release                          :  (000001F8E642B168)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Select_02 (000001F83EE66008)
+[LOG] SoundI::release                          :  (000001F8E6437D88)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Select_03 (000001F83EE66348)
+[LOG] SoundI::release                          :  (000001F8E64377C8)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Select_04 (000001F8E4EA8228)
+[LOG] SoundI::release                          :  (000001F8E6435B08)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Select_05 (000001F8E4EA83C8)
+[LOG] SoundI::release                          :  (000001F8E642D3E8)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Select_06 (000001F8410E1118)
+[LOG] SoundI::release                          :  (000001F8E6437AA8)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Select_07 (000001F8E9730208)
+[LOG] SoundI::release                          :  (000001F8E6436F28)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Select_01 (000001F83EE66688)
+[LOG] SoundI::release                          :  (000001F8E6436968)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Select_02 (000001F8E97303A8)
+[LOG] SoundI::release                          :  (000001F8E6437938)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Select_03 (000001F8E6F30D48)
+[LOG] SoundI::release                          :  (000001F8E6439318)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Select_04 (000001F837209788)
+[LOG] SoundI::release                          :  (000001F8E64374E8)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Select_05 (000001F8E6F31228)
+[LOG] SoundI::release                          :  (000001F8E642AD18)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Select_06 (000001F83EE66B68)
+[LOG] SoundI::release                          :  (000001F8E6437378)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Select_07 (000001F8E4EA8568)
+[LOG] SoundI::release                          :  (000001F8E6438628)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Select_01 (000001F837209928)
+[LOG] SoundI::release                          :  (000001F8E6437208)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Select_02 (000001F8E4EA88A8)
+[LOG] SoundI::release                          :  (000001F8E6439D28)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Select_03 (000001F8E972FD28)
+[LOG] SoundI::release                          :  (000001F8E6439A48)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Select_04 (000001F837208DC8)
+[LOG] SoundI::release                          :  (000001F8E6437EF8)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Select_05 (000001F8E9730888)
+[LOG] SoundI::release                          :  (000001F8E64367F8)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Select_06 (000001F8372092A8)
+[LOG] SoundI::release                          :  (000001F8E6435998)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Select_07 (000001F8E97306E8)
+[LOG] SoundI::release                          :  (000001F8E55CFEE8)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Place_01 (000001F838174998)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Select_01', format=5, channels=2, frequency=48000, lengthbytes=2880, lengthpcm=10276, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.078181.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Select_04', format=5, channels=2, frequency=48000, lengthbytes=2784, lengthpcm=9730, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.288488.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Select_06', format=5, channels=2, frequency=48000, lengthbytes=2848, lengthpcm=9955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.175243.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Select_02', format=5, channels=2, frequency=48000, lengthbytes=3520, lengthpcm=12823, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.063285.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Select_03', format=5, channels=2, frequency=48000, lengthbytes=2656, lengthpcm=9955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.091758.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Select_01', format=5, channels=2, frequency=48000, lengthbytes=3264, lengthpcm=9955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.218358.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Select_03', format=5, channels=2, frequency=48000, lengthbytes=2688, lengthpcm=10276, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.088092.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Select_06', format=5, channels=2, frequency=48000, lengthbytes=2592, lengthpcm=10330, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.651145.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Select_04', format=5, channels=2, frequency=48000, lengthbytes=3104, lengthpcm=9955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.260508.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Select_01', format=5, channels=2, frequency=48000, lengthbytes=2976, lengthpcm=9851, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.191118.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Select_06', format=5, channels=2, frequency=48000, lengthbytes=4096, lengthpcm=12823, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.084041.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_GenUI_ItemSelect', format=5, channels=2, frequency=48000, lengthbytes=864, lengthpcm=1714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988593.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Select_03', format=5, channels=2, frequency=48000, lengthbytes=2336, lengthpcm=8444, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.205665.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Select_02', format=5, channels=2, frequency=48000, lengthbytes=2912, lengthpcm=9955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.111816.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Select_05', format=5, channels=2, frequency=48000, lengthbytes=2688, lengthpcm=10459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.189099.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Select_05', format=5, channels=2, frequency=48000, lengthbytes=3424, lengthpcm=9955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199056.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Select_04', format=5, channels=2, frequency=48000, lengthbytes=3104, lengthpcm=11040, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.100681.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Select_02', format=5, channels=2, frequency=48000, lengthbytes=2976, lengthpcm=9851, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197889.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838D88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Select_05', format=5, channels=2, frequency=48000, lengthbytes=2752, lengthpcm=11804, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.114062.
+[LOG] SoundI::release                          :  (000001F8E55D0BD8)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Place_02 (000001F836BAA3C8)
+[LOG] SoundI::release                          :  (000001F8E55D2898)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Place_03 (000001F836AA8068)
+[LOG] SoundI::release                          :  (000001F8E55D3418)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Place_04 (000001F836BAABE8)
+[LOG] SoundI::release                          :  (000001F8E55D1FF8)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Place_05 (000001F90C132BB8)
+[LOG] SoundI::release                          :  (000001F8E55D2A08)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Place_06 (000001F90C133098)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Place_04', format=5, channels=2, frequency=48000, lengthbytes=7872, lengthpcm=35919, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.989672.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Place_06', format=5, channels=2, frequency=48000, lengthbytes=7712, lengthpcm=37173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275100.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Place_05', format=5, channels=2, frequency=48000, lengthbytes=7840, lengthpcm=36923, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.643089.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Place_02', format=5, channels=2, frequency=48000, lengthbytes=7200, lengthpcm=33457, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.905195.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Place_01', format=5, channels=2, frequency=48000, lengthbytes=6336, lengthpcm=28950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774084.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Place_03', format=5, channels=2, frequency=48000, lengthbytes=7008, lengthpcm=34148, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.831091.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Place_02', format=5, channels=2, frequency=48000, lengthbytes=6720, lengthpcm=32069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.989672.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Place_07', format=5, channels=2, frequency=48000, lengthbytes=7840, lengthpcm=36137, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.335533.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Place_06', format=5, channels=2, frequency=48000, lengthbytes=8224, lengthpcm=37173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.817426.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Place_04', format=5, channels=2, frequency=48000, lengthbytes=7296, lengthpcm=35919, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.382107.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Place_03', format=5, channels=2, frequency=48000, lengthbytes=7296, lengthpcm=34148, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.550784.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Place_02', format=5, channels=2, frequency=48000, lengthbytes=6912, lengthpcm=33457, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.460966.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Place_03', format=5, channels=2, frequency=48000, lengthbytes=6880, lengthpcm=34148, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456202.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Place_05', format=5, channels=2, frequency=48000, lengthbytes=7744, lengthpcm=36923, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.986009.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Place_01', format=5, channels=2, frequency=48000, lengthbytes=6272, lengthpcm=28602, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.672629.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Place_06', format=5, channels=2, frequency=48000, lengthbytes=7680, lengthpcm=37173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.987848.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Place_07', format=5, channels=2, frequency=48000, lengthbytes=7552, lengthpcm=36137, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.985953.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Place_04', format=5, channels=2, frequency=48000, lengthbytes=7232, lengthpcm=35919, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.989669.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Rock_Place_07', format=5, channels=2, frequency=48000, lengthbytes=7584, lengthpcm=36137, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.568919.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Squish_Place_01', format=5, channels=2, frequency=48000, lengthbytes=6368, lengthpcm=28950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.631819.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2937216
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 65664
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000004629CFF4B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD8A064130
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD8A0640F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD8A064210
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD8A0642D0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F93E838128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Dec_Wood_Place_05', format=5, channels=2, frequency=48000, lengthbytes=7840, lengthpcm=36923, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.649525.
+[LOG] SoundI::release                          :  (000001F8E55CF4D8)
+[LOG] SoundI::release                          :     SFX_Fish_Big_Place_07 (000001F836BAA8A8)
+[LOG] SoundI::release                          :  (000001F8E55CF7B8)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Place_01 (000001F836DCB958)
+[LOG] SoundI::release                          :  (000001F8E55D2B78)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Place_02 (000001F90C1326D8)
+[LOG] SoundI::release                          :  (000001F8E55D1308)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Place_03 (000001F836BAAD88)
+[LOG] SoundI::release                          :  (000001F8E55D1198)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Place_04 (000001F836DCC178)
+[LOG] SoundI::release                          :  (000001F8E55D1758)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Place_05 (000001F836DCBE38)
+[LOG] SoundI::release                          :  (000001F8E55D04A8)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Place_06 (000001F836AA8208)
+[LOG] SoundI::release                          :  (000001F8E55CFC08)
+[LOG] SoundI::release                          :     SFX_Fish_Small_Place_07 (000001F838174318)
+[LOG] SoundI::release                          :  (000001F8E55D2168)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Place_01 (000001F836AA86E8)
+[LOG] SoundI::release                          :  (000001F8E55D1A38)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Place_02 (000001F836BAA568)
+[LOG] SoundI::release                          :  (000001F8E55D1BA8)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Place_03 (000001F836AA8548)
+[LOG] SoundI::release                          :  (000001F8E55D0EB8)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Place_04 (000001F836DCC318)
+[LOG] SoundI::release                          :  (000001F8E55D1028)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Place_05 (000001F8381744B8)
+[LOG] SoundI::release                          :  (000001F8E55D0338)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Place_06 (000001F8381747F8)
+[LOG] SoundI::release                          :  (000001F8E55D18C8)
+[LOG] SoundI::release                          :     SFX_Fish_Med_Place_07 (000001F836DCBAF8)
+[LOG] SoundI::release                          :  (000001F8E55CFA98)
+[LOG] SoundI::release                          :     SFX_DecTab_01 (000001F90C132EF8)
+[LOG] SoundI::release                          :  (000001F8E55D1E88)
+[LOG] SoundI::release                          :     SFX_DecTab_02 (000001F90C132878)
+[LOG] SoundI::release                          :  (000001F8E55D43E8)
+[LOG] SoundI::release                          :     SFX_DecTab_03 (000001F8E7A398C8)
+[LOG] SoundI::release                          :  (000001F8E55D0A68)
+[LOG] SoundI::release                          :     SFX_GenUI_ItemSelect (000001F837209788)
+[LOG] SoundI::release                          :  (000001F8E55D0D48)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Select_01 (000001F837208DC8)
+[LOG] SoundI::release                          :  (000001F8E55D3E28)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Select_02 (000001F8E4EA8568)
+[LOG] SoundI::release                          :  (000001F8E55CF928)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Select_03 (000001F8372092A8)
+[LOG] SoundI::release                          :  (000001F8E55D0788)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Select_04 (000001F8E7A390A8)
+[LOG] SoundI::release                          :  (000001F8E55D25B8)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Select_05 (000001F8E4EA7EE8)
+[LOG] SoundI::release                          :  (000001F8E55D0618)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Select_06 (000001F8E972FB88)
+[LOG] SoundI::release                          :  (000001F8E55CF368)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Select_01 (000001F8E97303A8)
+[LOG] SoundI::release                          :  (000001F8E55D3CB8)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Select_02 (000001F8E4EA7D48)
+[LOG] SoundI::release                          :  (000001F8E55D3868)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Select_03 (000001F8E9730208)
+[LOG] SoundI::release                          :  (000001F8E55CF648)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Select_04 (000001F8E9730068)
+[LOG] SoundI::release                          :  (000001F8E55CFEE8)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Select_05 (000001F8E4EA8228)
+[LOG] SoundI::release                          :  (000001F8E55D3588)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Select_06 (000001F8E7A39248)
+[LOG] SoundI::release                          :  (000001F8E55D1478)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Select_01 (000001F8E7A39C08)
+[LOG] SoundI::release                          :  (000001F8E55CFD78)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Select_02 (000001F838174658)
+[LOG] SoundI::release                          :  (000001F8E55D22D8)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Select_03 (000001F8E9730548)
+[LOG] SoundI::release                          :  (000001F8E55D2CE8)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Select_04 (000001F8E4EA88A8)
+[LOG] SoundI::release                          :  (000001F8E55D3F98)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Select_05 (000001F83E765588)
+[LOG] SoundI::release                          :  (000001F8E55D08F8)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Select_06 (000001F837209448)
+[LOG] SoundI::release                          :  (000001F8E55D7638)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Place_01 (000001F83EE661A8)
+[LOG] SoundI::release                          :  (000001F8E55D2898)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Place_02 (000001F83E763EC8)
+[LOG] SoundI::release                          :  (000001F8E55D6D98)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Place_03 (000001F90C133098)
+[LOG] SoundI::release                          :  (000001F8E55DA438)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Place_04 (000001F83EE66828)
+[LOG] SoundI::release                          :  (000001F8E55D5248)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Place_05 (000001F8E6F31228)
+[LOG] SoundI::release                          :  (000001F8E55D81B8)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Place_06 (000001F83EE66B68)
+[LOG] SoundI::release                          :  (000001F8E55D9FE8)
+[LOG] SoundI::release                          :     SFX_Dec_Wood_Place_07 (000001F83EE65E68)
+[LOG] SoundI::release                          :  (000001F8E55D0BD8)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Place_01 (000001F83E764548)
+[LOG] SoundI::release                          :  (000001F8E55D4838)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Place_02 (000001F836AA8068)
+[LOG] SoundI::release                          :  (000001F8E55D4558)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Place_03 (000001F83E7658C8)
+[LOG] SoundI::release                          :  (000001F8E55D4108)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Place_04 (000001F836BAA3C8)
+[LOG] SoundI::release                          :  (000001F8E55D01C8)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Place_05 (000001F83E765248)
+[LOG] SoundI::release                          :  (000001F8E55D1FF8)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Place_06 (000001F83E764D68)
+[LOG] SoundI::release                          :  (000001F8E55D4C88)
+[LOG] SoundI::release                          :     SFX_Dec_Rock_Place_07 (000001F8E6F31568)
+[LOG] SoundI::release                          :  (000001F8E55D4DF8)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Place_01 (000001F8E6F318A8)
+[LOG] SoundI::release                          :  (000001F8E55D49A8)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Place_02 (000001F83E764F08)
+[LOG] SoundI::release                          :  (000001F8E55D4278)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Place_03 (000001F836AA8BC8)
+[LOG] SoundI::release                          :  (000001F8E55D0058)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Place_04 (000001F83E764A28)
+[LOG] SoundI::release                          :  (000001F8E55D9188)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Place_05 (000001F83EE664E8)
+[LOG] SoundI::release                          :  (000001F8E55D3418)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Place_06 (000001F836BAAA48)
+[LOG] SoundI::release                          :  (000001F8E55D2A08)
+[LOG] SoundI::release                          :     SFX_Dec_Squish_Place_07 (000001F83E764068)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)

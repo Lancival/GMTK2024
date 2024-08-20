@@ -288,10 +288,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638597618557371114
+  lastModified: 638597669099377544
   FileSizes:
   - Name: 
-    Value: 1746
+    Value: 1816
   Exists: 1
 --- !u!114 &-1584164946597164078
 MonoBehaviour:
@@ -335,7 +335,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638597618557351108
+  lastModified: 638597669099357534
   FileSizes: []
   Exists: 1
 --- !u!114 &-598860655330289557
@@ -397,12 +397,14 @@ MonoBehaviour:
   - {fileID: -9159641198548652838}
   - {fileID: 692247709002924688}
   - {fileID: -1584164946597164078}
+  - {fileID: 5373014185458068147}
+  - {fileID: 6113882747623298624}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1111291979683977272}
   StringsBanks:
   - {fileID: -2303418134573633316}
-  cacheTime: 638597618557371114
+  cacheTime: 638597669391158388
   cacheVersion: 131619
 --- !u!114 &281308377004390773
 MonoBehaviour:
@@ -568,6 +570,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 640
+--- !u!114 &5373014185458068147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Inventory_Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Inventory_Open
+  Guid:
+    Data1: 1863190877
+    Data2: 1198763035
+    Data3: 1403532160
+    Data4: -1531794939
+  Banks:
+  - {fileID: 6977259570518625723}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 484
 --- !u!114 &5824574674898817648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,6 +652,33 @@ MonoBehaviour:
   - Med
   - Big
   Exists: 1
+--- !u!114 &6113882747623298624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Inventory_Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Inventory_Close
+  Guid:
+    Data1: -1047313745
+    Data2: 1108828478
+    Data3: 1618422951
+    Data4: -1939292744
+  Banks:
+  - {fileID: 6977259570518625723}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 282
 --- !u!114 &6977259570518625723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,7 +694,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Bank.bank
   Name: Desktop/Bank
   StudioPath: bank:/Bank
-  lastModified: 638597618557331084
+  lastModified: 638597669391158388
   FileSizes: []
   Exists: 1
 --- !u!114 &7159229722000896335
