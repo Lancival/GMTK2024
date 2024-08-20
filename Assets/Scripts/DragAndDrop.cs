@@ -15,7 +15,8 @@ public class DragAndDrop : MonoBehaviour {
    {
     cam = Camera.main;
     AudioPlayer = GetComponent<SFXItems>();
-   }
+    AudioPlayer.SFXPlaySelect();
+    }
 
   void Update() {
     if (dragging) {

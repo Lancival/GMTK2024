@@ -13,7 +13,7 @@ public class SFXItems : MonoBehaviour
     //0 = organic, 1 = rock, 2 = wood
     private int decType = 0;
 
-    void Start()
+    void Awake()
     {
         fish = GetComponent<Fish>();
         if (fish != null)
