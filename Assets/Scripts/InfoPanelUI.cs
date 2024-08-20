@@ -14,11 +14,11 @@ public class InfoPanelUI : MonoBehaviour {
     
     public void UpdateInfo(StatsDatabase.StatItem statItem) {
         nameText.name = statItem.name;
+        nameText.text = statItem.name;
         image.sprite = statItem.sprite;
         typeValueText.text = statItem.assetType;
         spaceValueText.text = statItem.space;
         cleanlinessValueText.text = statItem.waterQuality;
-        // TODO: add flavortext to statDB
-        // flavorText.text = statItem.flavorText;
+        flavorText.text = statItem.flavorText;
     }
 }

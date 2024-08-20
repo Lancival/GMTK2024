@@ -51,6 +51,8 @@ public class Fish : MonoBehaviour
     float elapsed_time;
     bool is_swimming;
 
+    bool in_water;
+
 #endregion
 
     void Start()
@@ -61,6 +63,7 @@ public class Fish : MonoBehaviour
         m_Direction = PickDirection();
         elapsed_time = 0;
         is_swimming = false;
+        in_water = false;
     }
 
     public void Init(StatsDatabase.StatItem statItem) {
@@ -84,10 +87,32 @@ public class Fish : MonoBehaviour
         }
     }
 
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Water")
+        {
+            Debug.Log("hello there");
+            in_water = other.tag == "Water" ? true : false;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Water")
+        {
+            Debug.Log("bye there");
+            in_water = other.tag == "Water" ? false : true;
+        }
+    }
+
     Vector2 PickDirection()
     {
         Vector2[] directions = { Vector2.left, Vector2.right };
-        return directions[Random.Range(0, directions.Length)];
+        var dir =  directions[Random.Range(0, directions.Length)];
+        if (dir == Vector2.right)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        return dir;
     }
 
     void TurnCheck()
@@ -97,12 +122,19 @@ public class Fish : MonoBehaviour
         var roll = Random.Range(1, 100);
         if (probability >= roll)
         {
+            var sprite_renderer = GetComponent<SpriteRenderer>();
+            sprite_renderer.flipX = !sprite_renderer.flipX;
             m_Direction *= -1; 
         }
     }
 
     void SwimCheck()
     {
+        if (!in_water)
+        {
+            return;
+        }
+
         var swim_roll = Random.Range(1, 100);
         var swim_probability = Mathf.Clamp(impulse_probability, 0, 100);
         if (swim_probability >= swim_roll)
@@ -128,10 +160,12 @@ public class Fish : MonoBehaviour
             currentDistance = hit.distance;
         }
 
-        if (currentDistance <= wall_buffer)
+        if (currentDistance <= wall_buffer && in_water)
         {
+            var sprite_renderer = GetComponent<SpriteRenderer>();
             m_RigidBody2D.velocity = new Vector2(0f,0f);
             m_Direction *= -1;
+            sprite_renderer.flipX = !sprite_renderer.flipX;
         }
     }
 
