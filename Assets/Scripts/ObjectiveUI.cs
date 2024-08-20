@@ -28,6 +28,11 @@ public class ObjectiveUI : MonoBehaviour
 
     public void UpdateUI()
     {
+        if (m_objectiveManager == null) {
+            Debug.Log("Reassigning objective manager");
+            m_objectiveManager = (ObjectiveManager)FindObjectOfType<ObjectiveManager>();
+        }
+
         var spaceProgress = m_objectiveManager.CalculateSpaceLevel();
         var waterQualityProgress = m_objectiveManager.CalculateWaterQualityLevel();
 
@@ -36,9 +41,11 @@ public class ObjectiveUI : MonoBehaviour
 
         var currentFishes = m_objectiveManager.CurrentFishCount();
         var currentDecoration = m_objectiveManager.CurrentDecorationCount();
-
-        bool shouldCheckTop = currentFishes == m_objectiveManager.Objective.FishCount;
-        bool shouldCheckBottom = currentDecoration == m_objectiveManager.Objective.DecorationCount;
+        
+        bool shouldCheckTop = currentFishes >= m_objectiveManager.Objective.FishCount;
+        bool shouldCheckBottom = currentDecoration >= m_objectiveManager.Objective.DecorationCount;
+        Debug.Log("Should Check Top" +shouldCheckTop);
+        Debug.Log("Should Check bottom" + shouldCheckBottom);
 
         if (shouldCheckTop)
         {

@@ -19,8 +19,15 @@ public class ObjectiveManager : MonoBehaviour {
     #region Requirements
 
     public bool AllRequirementsComplete() {
-        return SpaceRange.IsGood(CalculateSpaceLevel()) &&
-               WaterQualityRange.IsGood(CalculateWaterQualityLevel());
+        return CurrentFishCount() >= Objective.FishCount && CurrentDecorationCount() >= Objective.DecorationCount;
+        // SpaceRange.IsGood(CalculateSpaceLevel()) &&
+        //       WaterQualityRange.IsGood(CalculateWaterQualityLevel())
+    }
+
+
+    void Start()
+    {
+        Debug.Log(string.Format("Goal Fish Count: {0} Goal Decoration Count: {1}", Objective.FishCount, Objective.DecorationCount));
     }
 
     /// <summary>

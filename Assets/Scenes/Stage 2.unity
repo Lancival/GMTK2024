@@ -550,6 +550,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2062340146}
+        m_TargetAssemblyTypeName: ObjectiveUI, Assembly-CSharp
+        m_MethodName: UpdateUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!114 &200133577
 MonoBehaviour:
@@ -1421,13 +1433,13 @@ MonoBehaviour:
     DecorationCount: 4
     DecorationObjectiveText: Have at least four decorations.
   <SpaceRange>k__BackingField:
-    MinOk: 1
-    MinGood: 2
-    MaxGood: 3
-    MaxOk: 5
+    MinOk: 7
+    MinGood: 11
+    MaxGood: 13
+    MaxOk: 15
   <WaterQualityRange>k__BackingField:
-    MinOk: -4
-    MinGood: -2
+    MinOk: -15
+    MinGood: -7
     MaxGood: 0
     MaxOk: 2
   tank: {fileID: 575343889}

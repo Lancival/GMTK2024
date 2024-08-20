@@ -93,7 +93,6 @@ public class Fish : MonoBehaviour
     {
         if (other.tag == "Water")
         {
-            Debug.Log("hello there");
             in_water = other.tag == "Water" ? true : false;
         }
     }
@@ -101,7 +100,6 @@ public class Fish : MonoBehaviour
     {
         if (other.tag == "Water")
         {
-            Debug.Log("bye there");
             in_water = other.tag == "Water" ? false : true;
         }
     }

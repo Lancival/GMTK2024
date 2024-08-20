@@ -16,6 +16,7 @@ public class MainButtons : MonoBehaviour
     public void ShowObjectiveUI()
     {
         m_ObjectiveUI.GetComponent<CanvasGroup>().alpha = 1f;
+        m_ObjectiveUI.UpdateUI();
     }
 
     public void ToggleValueChanged()
