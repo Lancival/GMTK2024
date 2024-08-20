@@ -8,7 +8,14 @@ public class DragAndDrop : MonoBehaviour {
   
   private Camera cam;
 
-  void Start() => cam = Camera.main;
+  private SFXItems AudioPlayer;
+
+    void Start()
+    {
+        AudioPlayer = GetComponent<SFXItems>();
+        AudioPlayer.SFXPlaySelect();
+        cam = Camera.main;
+    }
 
   void Update() {
     if (dragging) {
@@ -21,9 +28,10 @@ public class DragAndDrop : MonoBehaviour {
         // Added to tank successfully
         if (IsInTank(mousePos, out Tank tank) && tank.Add(gameObject)) 
         {
-          return;
+            AudioPlayer.SFXPlayPlace();
+            return;
         }
-        
+        AudioPlayer.SFXPlayReturn();
         Destroy(gameObject);
       }
     }
@@ -31,7 +39,8 @@ public class DragAndDrop : MonoBehaviour {
 
   void OnMouseDown() 
   {
-    dragging = true;
+    AudioPlayer.SFXPlaySelect();
+    dragging = true; 
     Vector2 mousePos = Mouse.current.position.ReadValue();
     if (IsInTank(mousePos, out Tank tank)) 
     {
