@@ -54,7 +54,7 @@ public class ObjectiveManager : MonoBehaviour {
 
     float CalculateSpaceLevel() { return tank.Fishes.Sum(x => x.Space) + tank.Decorations.Sum(x => x.Space); }
     float CalculateCleanlinessLevel() { return tank.Fishes.Sum(x => x.Cleanliness) + tank.Decorations.Sum(x => x.Cleanliness); }
-    int CalculateVarietyLevel() { return tank.Decorations.Select(x => x.Name).Distinct().Count(); }
+    int CalculateVarietyLevel() { return tank.Decorations.Select(x => x.ID).Distinct().Count(); }
 
     #endregion
 }

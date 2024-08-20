@@ -12,13 +12,7 @@ public class InfoPanelUI : MonoBehaviour {
     [SerializeField] TextMeshProUGUI cleanlinessValueText;
     [SerializeField] TextMeshProUGUI flavorText;
     
-    public void UpdateInfo(StatsDatabase.StatItem statItem) {
-        nameText.name = statItem.name;
-        image.sprite = statItem.sprite;
-        typeValueText.text = statItem.assetType;
-        spaceValueText.text = statItem.space;
-        cleanlinessValueText.text = statItem.waterQuality;
-        // TODO: add flavortext to statDB
-        // flavorText.text = statItem.flavorText;
+    public void UpdateInfo() {
+        // TODO: query item data -> change panel
     }
 }

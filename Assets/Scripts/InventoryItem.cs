@@ -1,29 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class InventoryItem : MonoBehaviour {
-    public StatsDatabase.StatItem statItem;
-
-    HoverEvent hover;
-
-    void Awake() {
-        hover = GetComponent<HoverEvent>();
-        hover.OnHoverEnter += OnHoverEnter;
-        hover.OnHoverExit += OnHoverExit;
-    }
-
-    void OnHoverEnter() {
-        UIManager.Instance.ToggleInfoPanel(true);
-        UIManager.Instance.UpdateInfoPanel(statItem);
-    }
-    void OnHoverExit() {
-        UIManager.Instance.ToggleInfoPanel(false);
-    }
+    public string SpawnName;
+    public string AssetType;
 
     public void SpawnItem() {
-        if (statItem.assetType == "Fish") {
-            Factory.Instance.CreateFish(statItem, transform.position);
-        } else if (statItem.assetType == "Decoration") {
-            Factory.Instance.CreateDeco(statItem, transform.position);
+        // TODO: create fish or deco game object from statItem
+        if (AssetType == "Fish") {
+            Factory.Instance.CreateFish(SpawnName, transform.position);
+        } else if (AssetType == "Decoration") {
+            Factory.Instance.CreateDeco(SpawnName, transform.position);
         }
     }
 }
